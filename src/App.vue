@@ -1,30 +1,85 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+
+
+	export default {
+
+
+	}
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav class="navbar  navbar-expand-lg">
+
+      <ul class="montegrino-nav d-flex justify-content-center align-items-center">
+        <li class="">
+          <router-link to="/" class="nav-link">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/chi siamo" class="nav-link">Chi Siamo</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/galleria" class="nav-link">Galleria</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
+        </li>
+
+        <router-link to="/">
+          <img class="logo me-5" src="/logo-montegrino.JPG" alt="">
+        </router-link>
+
+        <li class="nav-item">
+          <router-link to="/servizi" class="nav-link">Servizi</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/contatti" class="nav-link">Contatti</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/prenota" class="nav-link">Prenota</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/lingua" class="nav-link">Lingua</router-link>
+        </li>
+
+      </ul>
+
+  </nav>
+
+  <main>
+
+      <router-view></router-view>
+
+
+  </main>
+
+  <h1>amani</h1>
+
+
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style lang="scss">
+
+/* Stili specifici della Navbar, se necessario */
+.montegrino-nav {
+  background-color: #51962C;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.montegrino-nav li{
+  margin-right: 3rem;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.montegrino-nav li:hover{
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
 }
+
+.logo{
+  width:120px;
+
+}
+
+
 </style>

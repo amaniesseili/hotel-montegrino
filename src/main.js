@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
-import './style.css'
+import './style/general.scss'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+// Utilizzo del router nel main file (main.js)
+import { router } from "./router";
+
+createApp(App).use(router).mount("#app");
+
+
