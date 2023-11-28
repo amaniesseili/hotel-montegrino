@@ -15,7 +15,7 @@ export default {
         <router-link to="/" class="nav-link">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/chi siamo" class="nav-link">Chi Siamo</router-link>
+        <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
       </li>
       <li class="nav-item">
         <router-link to="/galleria" class="nav-link">Galleria</router-link>
