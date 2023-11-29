@@ -1,6 +1,7 @@
 <script>
 
 
+
 export default {
 
 
@@ -61,9 +62,11 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./style/partials/variables" as *;
+
 /* Stili specifici della Navbar, se necessario */
 .montegrino-nav {
-  background-color: #51962C;
+  background-color:$primary-color;
   color: white;
   text-decoration: none;
   list-style: none;
