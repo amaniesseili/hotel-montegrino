@@ -75,7 +75,7 @@ export default {
   font-size: 1.5rem;
   margin-bottom: 30px;
   font-weight: bold;
-  animation: fadeAnimation 1s ease-in-out;
+  animation: fadeAnimation 2s ease-in-out;
 }
 
 #book-now-btn {
@@ -85,7 +85,7 @@ export default {
   font-size: 1.2em;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
