@@ -9,6 +9,8 @@ export default {
 </script>
 
 <template>
+
+  <!--------- header --------->
   <nav class="navbar  navbar-expand-lg">
 
     <ul class="montegrino-nav d-flex justify-content-center align-items-center">
@@ -51,7 +53,7 @@ export default {
     </ul>
 
   </nav>
-
+  <!--------- main --------->
   <main>
     <div class="container">
 
@@ -59,12 +61,34 @@ export default {
 
     </div>
   </main>
+  <!--------- footer --------->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo-section">
+        <router-link to="/">
+          <img src="/logo-montegrino.JPG" alt="">
+        </router-link>
+      </div>
+      <div class="copyright-section">
+        <p>&copy; 2023 Hotel Montegrino. All rights reserved.</p>
+        <div class="text-center">
+          <small> Powered by Amani Esseili</small>
+        </div>
+      </div>
+      <div class="social-media-icons">
+        <a href="https://www.instagram.com/hotelmontegrino/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="url-to-facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style lang="scss">
 @use "./style/partials/variables" as *;
 
-/* Stili specifici della Navbar, se necessario */
+/* Stili specifici della Navbar */
 .montegrino-nav {
   background-color:$primary-color;
   color: white;
@@ -91,6 +115,47 @@ export default {
   margin-left: 2.2rem;
   margin-top: -1.3rem;
   margin-bottom: 1rem;
+}
 
+/* Stili specifici del Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $primary-color;
+  color: white; 
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section img {
+  height: 100px; 
+}
+
+.social-media-icons i {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 2rem;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.social-media-icons i:hover{
+  border-color: $medium-background-color ;
+  background-color:$light-background-color ;
+  color: $primary-color;
+  transform: scale(1.3);
+  
+}
+
+.copyright-section p {
+  margin: 0;
 }
 </style>
