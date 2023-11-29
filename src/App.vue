@@ -91,7 +91,7 @@ export default {
 /* Stili specifici della Navbar */
 .montegrino-nav {
   background-color:$primary-color;
-  color: white;
+  color: $text-color-header-footer;
   text-decoration: none;
   list-style: none;
   width: 100%;
@@ -110,7 +110,7 @@ export default {
   width: 120px;
 }
 .stars{
-  color: white;
+  color: $text-color-header-footer;
   font-size: 0.7rem;
   margin-left: 2.2rem;
   margin-top: -1.3rem;
@@ -123,7 +123,7 @@ export default {
   bottom: 0;
   width: 100%;
   background-color: $primary-color;
-  color: white; 
+  color: $text-color-header-footer; 
   padding-left: 5rem;
   padding-right: 5rem;
 }
@@ -140,7 +140,7 @@ export default {
 
 .social-media-icons i {
   font-size: 1.5rem;
-  color: white;
+  color: $text-color-header-footer;
   margin-left: 2rem;
   border: 1px solid transparent;
   padding: 5px;
