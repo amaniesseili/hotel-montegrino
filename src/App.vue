@@ -11,7 +11,7 @@ export default {
 <template>
 
   <!--------- header --------->
-  <nav class="navbar  navbar-expand-lg">
+  <nav>
 
     <ul class="montegrino-nav d-flex justify-content-center align-items-center">
       <li class="">
@@ -55,11 +55,11 @@ export default {
   </nav>
   <!--------- main --------->
   <main>
-    <div class="container">
+
 
       <router-view></router-view>
 
-    </div>
+
   </main>
   <!--------- footer --------->
   <footer class="footer">
@@ -90,11 +90,15 @@ export default {
 
 /* Stili specifici della Navbar */
 .montegrino-nav {
+  //position: fixed;
+  //top: 0;
   background-color:$primary-color;
   color: $text-color-header-footer;
   text-decoration: none;
   list-style: none;
   width: 100%;
+  height: 9rem;
+  
 }
 
 .montegrino-nav li {
@@ -119,9 +123,10 @@ export default {
 
 /* Stili specifici del Footer */
 .footer {
-  position: fixed;
-  bottom: 0;
+ // position: fixed;
+ // bottom: 0;
   width: 100%;
+  height: 4rem;
   background-color: $primary-color;
   color: $text-color-header-footer; 
   padding-left: 5rem;
@@ -135,7 +140,7 @@ export default {
 }
 
 .logo-section img {
-  height: 100px; 
+  height: 4rem; 
 }
 
 .social-media-icons i {
