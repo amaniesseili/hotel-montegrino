@@ -10,10 +10,13 @@ export default {
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
         <h1 class="reviews-title ">Cosa Dicono di Noi</h1>
         <div class="d-flex align-items-center">
-          <h3> 4.7 </h3>
-          <div class="google-rating">
+          <h3 class="me-2"> 4.7 </h3>
+          <div class="google-rating ">
             <div class="rating-percentage"></div>
           </div>
+          <small class="ms-2"> Su 
+            <img src="/google-logo-png2.png"  style="width: 17px;" alt="google-logo">
+              Google</small>
         </div>
         <p class="mt-1 text-center">Scoprite cosa dicono i nostri ospiti di noi. Leggete recensioni autentiche e condividete le
           vostre esperienze. La vostra soddisfazione è la nostra priorità, e ogni parola condivisa contribuisce a plasmare
@@ -34,7 +37,7 @@ export default {
           <div class="card-body d-flex flex-column ">
             <h5 class="card-title">Claretta Borghi</h5>
             <small class=" review-date ">02.06.2023 su
-              <img src="public/logo-google.png" style="width: 17px;" alt="google-logo"> Google
+              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
             <p class="card-text mt-2 flex-grow-1">Hotel immerso nel verde! Molto tranquillo e accogliente. Staff
               disponibile e camere
@@ -59,7 +62,7 @@ export default {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Vittorio P.</h5>
             <small class=" review-date ">21.10.2023 su
-              <img src="public/logo-google.png" style="width: 17px;" alt="google-logo"> Google
+              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
             <p class="card-text mt-2 flex-grow-1">Sono stato 3 notti e non ho nulla da lamentarmi! Sono gentillissimi, mi
               sono sentito
@@ -82,7 +85,7 @@ export default {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Elven Barchi</h5>
             <small class=" review-date ">05.05.2023 su
-              <img src="public/logo-google.png" style="width: 17px;" alt="google-logo"> Google
+              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
             <p class="card-text mt-2 flex-grow-1">Abbiamo soggiornato qui due notti a fine aprile, una favola! Hotel molto
               semplice ma
@@ -106,7 +109,7 @@ export default {
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">De Nardo Salvatore</h5>
             <small class=" review-date ">12.06.2023 su
-              <img src="public/logo-google.png" style="width: 17px;" alt="google-logo"> Google
+              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
             <p class="card-text mt-2 flex-grow-1">Un albergo da consigliare. Molto carino, il personale gentillissimo è
               sopratutto a
@@ -144,6 +147,11 @@ export default {
   height: calc(100vh - 13rem);
 }
 
+small{
+  color: gray;
+
+}
+
 .google-rating {
   background-color: rgb(170, 166, 166);
   width: 20rem;
@@ -151,7 +159,7 @@ export default {
   border-radius: 5px;
 }
 h3{
-  color:$primary-color ;
+  color:gray ;
 }
 .rating-percentage {
   background-color: $primary-color;
