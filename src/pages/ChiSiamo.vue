@@ -77,7 +77,7 @@
 
 }
 .explore-btn {
-  background-color: #4CAF50;
+  background-color: $primary-color;
   color: white;
   padding: 10px 30px;
   font-size: 1.2em;
@@ -88,7 +88,8 @@
 }
 
 .explore-btn:hover {
-  background-color: #45a049;
+  background-color: #4CAF50;
+  color: white;
 }
 
 

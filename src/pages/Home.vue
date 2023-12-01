@@ -79,7 +79,7 @@ export default {
 }
 
 #book-now-btn {
-  background-color: #4CAF50;
+  background-color:$primary-color;
   color: white;
   padding: 10px 20px;
   font-size: 1.2em;
@@ -90,6 +90,6 @@ export default {
 }
 
 #book-now-btn:hover {
-  background-color: #45a049;
+  background-color: #4CAF50;
 }
 </style>
