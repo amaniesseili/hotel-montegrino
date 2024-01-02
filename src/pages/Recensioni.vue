@@ -33,7 +33,7 @@ export default {
       <div class="col-12 col-md-6 col-lg-2">
         <div
           class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="public/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 1">
+          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 1">
           <div class="card-body d-flex flex-column ">
             <h5 class="card-title">Claretta Borghi</h5>
             <small class=" review-date ">02.06.2023 su
@@ -58,7 +58,7 @@ export default {
       <div class="col-12 col-md-6 col-lg-2">
         <div
           class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="public/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 2">
+          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 2">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Vittorio P.</h5>
             <small class=" review-date ">21.10.2023 su
@@ -81,7 +81,7 @@ export default {
       <div class="col-12 col-md-6 col-lg-2 ">
         <div
           class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="public/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 3">
+          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 3">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">Elven Barchi</h5>
             <small class=" review-date ">05.05.2023 su
@@ -105,7 +105,7 @@ export default {
       <div class="col-12 col-md-6 col-lg-2">
         <div
           class="card text-center d-flex justify-content-center align-items-center flex-column  p-1 bg-transparent h-100">
-          <img src="public/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 4">
+          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 4">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">De Nardo Salvatore</h5>
             <small class=" review-date ">12.06.2023 su

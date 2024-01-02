@@ -28,13 +28,13 @@ export default {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="public/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
+            <img src="/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
           </div>
           <div class="carousel-item">
-            <img src="public/logo-montegrino.JPG" class="d-block w-100" alt="..." style="height: 30rem;" >
+            <img src="/logo-montegrino.JPG?url" class="d-block w-100" alt="..." style="height: 30rem;" >
           </div>
           <div class="carousel-item">
-            <img src="public/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
+            <img src="/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

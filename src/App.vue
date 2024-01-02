@@ -1,7 +1,4 @@
 <script>
-
-
-
 export default {
 
 
@@ -28,7 +25,7 @@ export default {
       </li>
       <div class="d-flex justify-content-center">
         <router-link to="/">
-          <img class="logo me-5" src="/logo-montegrino.JPG" alt="">
+          <img class="logo me-5" src="/logo-montegrino.JPG?url" alt="">
           <div class="stars">
             <i class="fa-solid fa-star me-1"></i>
             <i class="fa-solid fa-star me-1"></i>
@@ -44,7 +41,8 @@ export default {
         <router-link to="/contatti" class="nav-link">Contatti</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/prenota" class="nav-link">Prenota</router-link>
+        <!-- <router-link to="/prenota" class="nav-link">Prenota</router-link> -->
+        <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" target="_self">Prenota</a>
       </li>
       <li class="nav-item">
         <router-link to="/lingua" class="nav-link">Lingua</router-link>
@@ -66,7 +64,7 @@ export default {
     <div class="footer-content">
       <div class="logo-section">
         <router-link to="/">
-          <img src="/logo-montegrino.JPG" alt="">
+          <img src="/logo-montegrino.JPG?url" alt="">
         </router-link>
       </div>
       <div class="copyright-section">
@@ -108,6 +106,11 @@ export default {
 .montegrino-nav li:hover {
   padding-bottom: 1rem;
   border-bottom: 3px solid white;
+}
+
+.montegrino-nav a {
+  text-decoration: none;
+  color: white;
 }
 
 .logo {
