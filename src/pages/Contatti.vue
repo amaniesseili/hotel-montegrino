@@ -1,5 +1,10 @@
 <script>
+import TomTom from '../components/TomTom.vue';
 export default {
+  components:{
+    TomTom
+  },
+  
   data() {
     return {
       formData: {
@@ -22,9 +27,12 @@ export default {
 </script>
 <template>
 
+
+
     <div class="container-fluid bg-page ">
       <div class="row">
         <div class="col-md-6">
+          <TomTom></TomTom>
           <!-- Mappa -->
           <!--  il tuo codice per la mappa  -->
         </div>

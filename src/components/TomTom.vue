@@ -1,10 +1,22 @@
+<template>
+  <div class="mt-5" ref="map" style="height: 400px;"></div>
+</template>
+
 <script>
-import tt from '@tomtom-international/web-sdk-maps';
+
+
+import tt from '@tomtom-international/web-sdk-maps'
 
 export default {
   data() {
     return {
       map: null,
+      apiKey: '2QRkJUJyX9OT1og2NuGIOrXrLjjOKMQ9', // Sostituisci con la tua chiave API TomTom
+      location: {
+        lat: 45.4642,
+        lon: 9.1900
+      },
+      zoom: 15
     };
   },
   mounted() {
@@ -12,30 +24,22 @@ export default {
   },
   methods: {
     initMap() {
-      tt.setProductInfo('MontergrinoHotel', '0.0.0'); // il nome della mio progetto (app) e la versione
-
+      tt.setProductInfo('Vue TomTom Maps', '1.0');
       this.map = tt.map({
-        key: '2QRkJUJyX9OT1og2NuGIOrXrLjjOKMQ9', // Sostituisco la mia chiave API TomTom
-        container: this.$refs.mapContainer,
-        style: 'https://api.maptiler.com/maps/basic-v2/style.json?key=2QRkJUJyX9OT1og2NuGIOrXrLjjOKMQ9',
-        center: [9.1895, 45.4642], // Coordinate di Milano
-        zoom: 15,
+        key: this.apiKey,
+        container: this.$refs.map,
+        center: [this.location.lon, this.location.lat],
+        zoom: this.zoom
       });
 
-      // per aggiungere marcatori, linee
-      const marker = new tt.Marker().setLngLat([9.1895, 45.4642]).addTo(this.map);
-    },
-  },
+      const marker = new tt.Marker().setLngLat([this.location.lon, this.location.lat]).addTo(this.map);
+
+      // Puoi personalizzare ulteriormente la mappa o aggiungere marker aggiuntivi secondo le tue esigenze.
+    }
+  }
 };
 </script>
 
-<template>
-  <div ref="mapContainer" class="map-container"></div>
-</template>
-
-
 <style scoped>
-.map-container {
-  height: 400px;
-}
+/* Aggiungi eventuali stili specifici del componente */
 </style>
