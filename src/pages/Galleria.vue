@@ -61,7 +61,7 @@ export default {
   margin-top: -1rem;
   padding: 4rem;
   background-color: $medium-background-color;
-  height: calc(100vh - 13rem);
+  min-height: calc(100vh - 13rem);
 }
 
 

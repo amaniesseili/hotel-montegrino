@@ -1,7 +1,40 @@
 <script>
 export default {
-
-}
+  data() {
+    return {
+      reviews: [
+        {
+          image: "/bg-homepage.jpg",
+          title: "Claretta Borghi",
+          date: "02.06.2023",
+          content: "Hotel immerso nel verde! Molto tranquillo e accogliente...",
+          googleLink: "link_a_google",
+        },
+        {
+          image: "/bg-homepage.jpg",
+          title: "Vittorio P.",
+          date: "21.10.2023",
+          content: "Sono stato 3 notti e non ho nulla da lamentarmi! Sono gentilissimi, mi sono sentito come a casa. Sicuro ci ritorno!",
+          googleLink: "link_a_google",
+        },
+        {
+          image: "/bg-homepage.jpg",
+          title: "Elven Barchi",
+          date: "05.05.2023",
+          content: "Abbiamo soggiornato qui due notti a fine aprile, una favola! Hotel molto semplice ma davvero carino. Molto pulito, personale molto accogliente e disponibile. La camera era davvero pulita. Letto King size molto comodo!",
+          googleLink: "link_a_google",
+        },
+        {
+          image: "/bg-homepage.jpg",
+          title: "De Nardo Salvatore",
+          date: "12.06.2023",
+          content: "Un albergo da consigliare. Molto carino, il personale gentilissimo è soprattutto a disposizione 24 su 24 ore. Camere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato",
+          googleLink: "link_a_google",
+        },
+      ],
+    };
+  },
+};
 </script>
 <template>
   <div class="container-fluid bg-page ">
@@ -25,48 +58,20 @@ export default {
 
       </div>
     </div>
+    
 
-
-    <div class="row ">
-      <div class="col-2"></div>
-      <!-- recensione numero 1  -->
-      <div class="col-12 col-md-6 col-lg-2">
-        <div
-          class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 1">
-          <div class="card-body d-flex flex-column ">
-            <h5 class="card-title">Claretta Borghi</h5>
-            <small class=" review-date ">02.06.2023 su
-              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
-            </small>
-            <p class="card-text mt-2 flex-grow-1">Hotel immerso nel verde! Molto tranquillo e accogliente. Staff
-              disponibile e camere
-              pulite. Ideale per gite fuori porta per gli amanti della natura!</p>
-
-            <div class="rating ">
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- recensione numero 2  -->
-      <div class="col-12 col-md-6 col-lg-2">
-        <div
-          class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 2">
+  <!-- ------------------------ -->
+  <div class="row d-flex justify-content-center">
+      <div v-for="(review, index) in reviews" :key="index" class="col-12 col-md-5 col-lg-2 mb-4">
+        <!-- la card di recensione -->
+        <div class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
+          <img :src="review.image" class="card-img-top card-img-circle" alt="Reviewer">
           <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Vittorio P.</h5>
-            <small class=" review-date ">21.10.2023 su
+            <h5 class="card-title">{{ review.title }}</h5>
+            <small class="review-date">{{ review.date }} su
               <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
-            <p class="card-text mt-2 flex-grow-1">Sono stato 3 notti e non ho nulla da lamentarmi! Sono gentillissimi, mi
-              sono sentito
-              come a casa. Sicuro ci ritorno!</p>
+            <p class="card-text mt-2 flex-grow-1">{{ review.content }}</p>
             <div class="rating">
               <i class="fa-solid fa-star me-1"></i>
               <i class="fa-solid fa-star me-1"></i>
@@ -77,56 +82,9 @@ export default {
           </div>
         </div>
       </div>
-      <!-- recensione numero 3  -->
-      <div class="col-12 col-md-6 col-lg-2 ">
-        <div
-          class="card text-center d-flex justify-content-center align-items-center flex-column p-1 bg-transparent h-100">
-          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Elven Barchi</h5>
-            <small class=" review-date ">05.05.2023 su
-              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
-            </small>
-            <p class="card-text mt-2 flex-grow-1">Abbiamo soggiornato qui due notti a fine aprile, una favola! Hotel molto
-              semplice ma
-              davvero carino. Molto pulito, personale molto accogliente e disponibile. La camera era davvero pulita.Letto
-              King size molto comodo!</p>
-            <div class="rating">
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- recensione numero 4  -->
-      <div class="col-12 col-md-6 col-lg-2">
-        <div
-          class="card text-center d-flex justify-content-center align-items-center flex-column  p-1 bg-transparent h-100">
-          <img src="/bg-homepage.jpg" class="card-img-top card-img-circle" alt="Reviewer 4">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">De Nardo Salvatore</h5>
-            <small class=" review-date ">12.06.2023 su
-              <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
-            </small>
-            <p class="card-text mt-2 flex-grow-1">Un albergo da consigliare. Molto carino, il personale gentillissimo è
-              sopratutto a
-              disposizione 24 su 24 ore. Cmere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato
-            </p>
-            <div class="rating">
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star me-1"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
+<!-- ---------------------------- -->
 
-    </div>
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
@@ -142,10 +100,11 @@ export default {
 
 .bg-page {
   margin-top: -1rem;
-  padding: 4rem;
+  padding: 2.5rem;
   background-color: $medium-background-color;
-  height: calc(100vh - 13rem);
+  min-height: calc(100vh - 13rem);
 }
+
 
 small{
   color: gray;
@@ -196,6 +155,8 @@ h3{
 .card {
   border-color: $primary-color;
   animation: fadeIn 0.5s ease-in-out;
+  
+  min-width: 9rem;
 }
 
 @keyframes fadeIn {
