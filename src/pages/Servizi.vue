@@ -47,7 +47,7 @@ export default {
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 mb-3 " v-for="(service, index) in services" :key="index">
+        <div class="col-12 col-md-4 col-lg-2 mb-3 " v-for="(service, index) in services" :key="index">
           <div class="service-item  text-center h-100">
             <i :class="service.icon" id="service-icon"></i>
             <!-- <img :src="service.icon" alt="Service Icon" class="service-icon">  -->
@@ -66,7 +66,7 @@ export default {
   padding-left: 4rem;
   padding-right: 4rem;
   background-color: $medium-background-color;
-  height: calc(100vh - 13rem);
+  min-height: calc(100vh - 13rem);
 }
 
 .service-item {

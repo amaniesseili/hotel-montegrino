@@ -53,7 +53,9 @@ export default {
   border: 2px solid $primary-color;
   margin-left: 2rem;
   margin-right: 2rem;
-  height: 42rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: 40rem;
 }
 
 </style>
