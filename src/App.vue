@@ -51,6 +51,59 @@ export default {
     </ul>
 
   </nav>
+  <!-- ------------- -->
+<nav class="navbar navbar-expand-lg montegrino-nav">
+
+
+  <button class="navbar-toggler ms-4" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+      <li class="nav-item">
+        <router-link to="/" class="nav-link">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/galleria" class="nav-link">Galleria</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
+      </li>
+    </ul>
+  </div>
+  <router-link to="/" class="navbar-brand">
+    <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
+    <div class="stars">
+      <i class="fa-solid fa-star me-1"></i>
+      <i class="fa-solid fa-star me-1"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </router-link>
+  <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+      <li class="nav-item">
+        <router-link to="/servizi" class="nav-link">Servizi</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/contatti" class="nav-link">Contatti</router-link>
+      </li>
+      <li class="nav-item">
+        <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" target="_self" class="nav-link">Prenota</a>
+      </li>
+      <li class="nav-item">
+        <router-link to="/lingua" class="nav-link">Lingua</router-link>
+      </li>
+
+    </ul>
+
+  </div>
+
+
+</nav>
   <!--------- main --------->
   <main>
 
@@ -88,8 +141,6 @@ export default {
 
 /* Stili specifici della Navbar */
 .montegrino-nav {
-  //position: fixed;
-  //top: 0;
   background-color:$primary-color;
   color: $text-color-header-footer;
   text-decoration: none;
@@ -106,6 +157,7 @@ export default {
 .montegrino-nav li:hover {
   padding-bottom: 1rem;
   border-bottom: 3px solid white;
+  color: white;
 }
 
 .montegrino-nav a {
@@ -122,6 +174,9 @@ export default {
   margin-left: 2.2rem;
   margin-top: -1.3rem;
   margin-bottom: 1rem;
+}
+.toggler-icon{
+  padding: 1.5rem;
 }
 
 /* Stili specifici del Footer */
