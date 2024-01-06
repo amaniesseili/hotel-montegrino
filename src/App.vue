@@ -52,16 +52,25 @@ export default {
     </ul>
 
   </nav>
-  <!-- ------------- -->
+  <!-- -------------nav2 -->
 <nav class="navbar navbar-expand-lg montegrino-nav">
+  
+    <!-- logo -->
+    <router-link to="/" class="navbar-brand d-lg-none">
+      <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
+      <div class="stars">
+        <i class="fa-solid fa-star me-1"></i>
+        <i class="fa-solid fa-star me-1"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </router-link>
 
-
-  <button class="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler me-4 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-    <ul class="navbar-nav d-flex justify-content-center align-items-center me-auto my-2 my-lg-0  navbar-nav-scroll" style="--bs-scroll-height:100px;">
+  <div class="collapse navbar-collapse justify-content-end montegrino-scroll-nav" id="navbarScroll">
+    <ul class="navbar-nav d-flex justify-content-center align-items-start ms-4" >
       <li class="nav-item">
         <router-link to="/" class="nav-link">Home</router-link>
       </li>
@@ -76,7 +85,9 @@ export default {
       </li>
     </ul>
   </div>
-  <router-link to="/" class="navbar-brand">
+
+  <!--logo -->
+  <router-link to="/" class="navbar-brand d-lg-block d-md-none">
     <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
     <div class="stars">
       <i class="fa-solid fa-star me-1"></i>
@@ -84,8 +95,9 @@ export default {
       <i class="fa-solid fa-star"></i>
     </div>
   </router-link>
-  <div class="collapse navbar-collapse justify-content-start" id="navbarScroll">
-    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+  <!-------------- -->
+  <div class="collapse navbar-collapse justify-content-start montegrino-scroll-nav" id="navbarScroll">
+    <ul class="navbar-nav d-flex justify-content-center align-items-start ms-4">
       <li class="nav-item">
         <router-link to="/servizi" class="nav-link">Servizi</router-link>
       </li>
@@ -165,7 +177,9 @@ export default {
   text-decoration: none;
   color: white;
 }
-
+.montegrino-scroll-nav{
+  background-color: $primary-color;
+}
 .logo {
   width: 120px;
 }
@@ -177,7 +191,7 @@ export default {
   margin-bottom: 1rem;
 }
 .toggler-icon{
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 /* Stili specifici del Footer */
