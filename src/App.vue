@@ -1,4 +1,5 @@
 <script>
+
 export default {
 
 
@@ -55,12 +56,12 @@ export default {
 <nav class="navbar navbar-expand-lg montegrino-nav">
 
 
-  <button class="navbar-toggler ms-4" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+    <ul class="navbar-nav d-flex justify-content-center align-items-center me-auto my-2 my-lg-0  navbar-nav-scroll" style="--bs-scroll-height:100px;">
       <li class="nav-item">
         <router-link to="/" class="nav-link">Home</router-link>
       </li>
@@ -83,7 +84,7 @@ export default {
       <i class="fa-solid fa-star"></i>
     </div>
   </router-link>
-  <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-start" id="navbarScroll">
     <ul class="navbar-nav d-flex justify-content-center align-items-center">
       <li class="nav-item">
         <router-link to="/servizi" class="nav-link">Servizi</router-link>
@@ -97,13 +98,13 @@ export default {
       <li class="nav-item">
         <router-link to="/lingua" class="nav-link">Lingua</router-link>
       </li>
-
     </ul>
-
   </div>
-
-
 </nav>
+
+<!-- ---------------- -->
+
+    
   <!--------- main --------->
   <main>
 
