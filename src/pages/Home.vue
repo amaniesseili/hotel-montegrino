@@ -16,7 +16,8 @@ export default {
         <p>Il tuo Rifugio Perfetto nella Natura</p>
       </div>
 
-      <a href="/prenota" id="book-now-btn">Prenota Ora</a>
+      <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" id="book-now-btn">Prenota Ora</a>
+    
     </div>
 
 </div>
