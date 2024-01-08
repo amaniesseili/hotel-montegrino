@@ -1,6 +1,16 @@
 <script>
 
 export default {
+  methods: {
+    closeNavbarOnItemClick() {
+      const menuToggle = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+
+      if (menuToggle && navbarCollapse) {
+        menuToggle.click(); // Chiudi il menu
+      }
+    },
+  },
 
 
 }
@@ -9,57 +19,14 @@ export default {
 <template>
 
   <!--------- header --------->
-  <nav>
-
-    <ul class="montegrino-nav d-flex justify-content-center align-items-center">
-      <li class="">
-        <router-link to="/" class="nav-link">Home</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/galleria" class="nav-link">Galleria</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
-      </li>
-      <div class="d-flex justify-content-center">
-        <router-link to="/">
-          <img class="logo me-5" src="/logo-montegrino.JPG?url" alt="">
-          <div class="stars">
-            <i class="fa-solid fa-star me-1"></i>
-            <i class="fa-solid fa-star me-1"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-        </router-link>
-      </div>
-
-      <li class="nav-item">
-        <router-link to="/servizi" class="nav-link">Servizi</router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/contatti" class="nav-link">Contatti</router-link>
-      </li>
-      <li class="nav-item">
-        <!-- <router-link to="/prenota" class="nav-link">Prenota</router-link> -->
-        <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" target="_self">Prenota</a>
-      </li>
-      <li class="nav-item">
-        <router-link to="/lingua" class="nav-link">Lingua</router-link>
-      </li>
-
-    </ul>
-
-  </nav>
-  <!-- -------------nav2 -->
+  
 <nav class="navbar navbar-expand-lg montegrino-nav">
   
     <!-- logo -->
-    <router-link to="/" class="navbar-brand d-lg-none">
+    <router-link to="/" class="navbar-brand d-lg-none d-md-block d-sm-block">
       <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
       <div class="stars">
-        <i class="fa-solid fa-star me-1"></i>
+        <i class="fa-solid fa-star me-1"></i> 
         <i class="fa-solid fa-star me-1"></i>
         <i class="fa-solid fa-star"></i>
       </div>
@@ -69,25 +36,27 @@ export default {
     <span class="navbar-toggler-icon toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-end montegrino-scroll-nav" id="navbarScroll">
-    <ul class="navbar-nav d-flex justify-content-center align-items-start ms-4" >
+  <div class="collapse navbar-collapse justify-content-end montegrino-scroll-nav" id="navbarScroll" >
+    <ul class="navbar-nav ms-4" >
       <li class="nav-item">
-        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/" class="nav-link" @click="closeNavbarOnItemClick">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
+        <router-link to="/chisiamo" class="nav-link" @click="closeNavbarOnItemClick">Chi Siamo</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/galleria" class="nav-link">Galleria</router-link>
+        <router-link to="/galleria" class="nav-link" @click="closeNavbarOnItemClick">Galleria</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
+        <router-link to="/recensioni" class="nav-link" @click="closeNavbarOnItemClick">Recensioni</router-link>
       </li>
     </ul>
   </div>
 
-  <!--logo -->
-  <router-link to="/" class="navbar-brand d-lg-block d-md-none">
+
+
+  <!------------logo------------ -->
+  <router-link to="/" class="navbar-brand d-lg-block d-none d-sm-none ">
     <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
     <div class="stars">
       <i class="fa-solid fa-star me-1"></i>
@@ -95,20 +64,21 @@ export default {
       <i class="fa-solid fa-star"></i>
     </div>
   </router-link>
-  <!-------------- -->
+  <!-------------------------------- -->
+
   <div class="collapse navbar-collapse justify-content-start montegrino-scroll-nav" id="navbarScroll">
-    <ul class="navbar-nav d-flex justify-content-center align-items-start ms-4">
+    <ul class="navbar-nav ms-4">
       <li class="nav-item">
-        <router-link to="/servizi" class="nav-link">Servizi</router-link>
+        <router-link to="/servizi" class="nav-link" @click="closeNavbarOnItemClick">Servizi</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/contatti" class="nav-link">Contatti</router-link>
+        <router-link to="/contatti" class="nav-link" @click="closeNavbarOnItemClick">Contatti</router-link>
       </li>
       <li class="nav-item">
         <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" target="_self" class="nav-link">Prenota</a>
       </li>
       <li class="nav-item">
-        <router-link to="/lingua" class="nav-link">Lingua</router-link>
+        <router-link to="/lingua" class="nav-link" @click="closeNavbarOnItemClick">Lingua</router-link>
       </li>
     </ul>
   </div>
@@ -128,13 +98,13 @@ export default {
   <!--------- footer --------->
   <footer class="footer">
     <div class="footer-content">
-      <div class="logo-section">
+      <div class="logo-section d-none d-sm-none d-md-block d-lg-block">
         <router-link to="/">
           <img src="/logo-montegrino.JPG?url" alt="">
         </router-link>
       </div>
       <div class="copyright-section">
-        <p>&copy; 2023 Hotel Montegrino. All rights reserved.</p>
+        <p class="text-center">&copy; 2023 Hotel Montegrino. All rights reserved.</p>
         <div class="text-center">
           <small> Powered by Amani Esseili</small>
         </div>
@@ -167,16 +137,18 @@ export default {
   margin-right: 3rem;
 }
 
-.montegrino-nav li:hover {
+/*.navbar-nav .nav-item:hover {
   padding-bottom: 1rem;
   border-bottom: 3px solid white;
   color: white;
-}
+  
+}*/
 
 .montegrino-nav a {
   text-decoration: none;
   color: white;
 }
+
 .montegrino-scroll-nav{
   background-color: $primary-color;
 }
@@ -199,7 +171,7 @@ export default {
  // position: fixed;
  // bottom: 0;
   width: 100%;
-  height: 4rem;
+  min-height: 5rem;
   background-color: $primary-color;
   color: $text-color-header-footer; 
   padding-left: 5rem;

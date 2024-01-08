@@ -41,7 +41,7 @@ export default {
     <div class="row">
       <div class="col-2"></div>
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
-        <h1 class="reviews-title ">Cosa Dicono di Noi</h1>
+        <h1 class="reviews-title">Cosa Dicono di Noi</h1>
         <div class="d-flex align-items-center">
           <h3 class="me-2"> 4.7 </h3>
           <div class="google-rating ">
@@ -142,7 +142,7 @@ h3{
 
 
 .reviews-title {
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 .card-img-circle {
@@ -200,7 +200,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .read-more-btn:hover {

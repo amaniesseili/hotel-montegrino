@@ -42,7 +42,7 @@ export default {
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <h1 class="text-center">Servizzi</h1>
+          <h1 class="text-center mt-4">Servizzi</h1>
         <p class="text-center">La nostra <strong>reception</strong>  accogliente è pronta ad assisterti tra le <strong> 9:00 e le 22:00</strong>, garantendo un servizio dedicato e disponibile. Il <strong>check-in</strong> , disponibile dalle <br> <strong>14:00 alle 22:00</strong>, e il <strong>check-out entro le 11:00</strong> . Siamo qui per rendere il tuo arrivo e la tua partenza il più agevoli possibile.</p>
         </div>
       </div>
