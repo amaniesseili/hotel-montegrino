@@ -1,7 +1,9 @@
-import { createI18n } from 'vue-i18n';
+//import { createI18n } from 'vue-i18n';
 
-const i18n = createI18n({
-  legacy: false,
+
+
+//const i18n = createI18n({
+ /* legacy: false,
   locale: 'it', // Lingua predefinita
   messages: {
     //------------------------------------------------
@@ -41,6 +43,6 @@ const i18n = createI18n({
 
     //----------------------------------------------
   },
-});
+});*/
 
-export default i18n;
+//export default i18n;

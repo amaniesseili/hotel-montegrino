@@ -1,16 +1,12 @@
 <script>
 
-export default {
- /* methods: {
-    closeNavbarOnItemClick() {
-      const menuToggle = document.querySelector('.navbar-toggler');
-      const navbarCollapse = document.querySelector('.navbar-collapse');
+//import LanguageSwitcher from './components/LanguageSwitcher.vue';
 
-      if (menuToggle && navbarCollapse) {
-        menuToggle.click(); // Chiudi il menu
-      }
-    },
-  },*/
+export default {
+  components: {
+    //LanguageSwitcher, //Registro il componente LanguageSwitcher
+
+  }
 
 
 }
@@ -41,16 +37,16 @@ export default {
     <div class="collapse navbar-collapse justify-content-center montegrino-scroll-nav" id="navbarNavDropdown">
       <ul class="navbar-nav ms-4">
         <li class="nav-item me-5 ">
-          <router-link to="/" class="nav-link" @click="closeNavbarOnItemClick">Home</router-link>
+          <router-link to="/" class="nav-link">{{ $t('home') }}</router-link>
         </li>
         <li class="nav-item me-5 ">
-          <router-link to="/chisiamo" class="nav-link" @click="closeNavbarOnItemClick">Chi Siamo</router-link>
+          <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/galleria" class="nav-link" @click="closeNavbarOnItemClick">Galleria</router-link>
+          <router-link to="/galleria" class="nav-link">Galleria</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/recensioni" class="nav-link" @click="closeNavbarOnItemClick">Recensioni</router-link>
+          <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
         </li>
       </ul>
 
@@ -67,20 +63,34 @@ export default {
 
       <ul class="navbar-nav ms-4 ">
         <li class="nav-item me-5">
-          <router-link to="/servizi" class="nav-link" @click="closeNavbarOnItemClick">Servizi</router-link>
+          <router-link to="/servizi" class="nav-link" >Servizi</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/contatti" class="nav-link" @click="closeNavbarOnItemClick">Contatti</router-link>
+          <router-link to="/contatti" class="nav-link" >Contatti</router-link>
         </li>
         <li class="nav-item me-5">
           <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita"
             target="_self" class="nav-link">Prenota</a>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/lingua" class="nav-link" @click="closeNavbarOnItemClick">Lingua</router-link>
+          <router-link to="/lingua" class="nav-link" >Lingua</router-link>
         </li>
         <!-- -----lingua2 ----- -->
         <li class="nav-item dropdown ">
+          <!-- LanguageSwitche componente -->
+
+            <!-- <LanguageSwitcher
+              :currentLanguage="'italiano'" 
+              :languages="[
+                { code: 'it', name: 'Italiano', flag: '/Flag_of_Italy.svg.png' },
+                { code: 'en', name: 'Inglese', flag: '/Flag_of_the_United_Kingdom.png' },
+                { code: 'fr', name: 'Francese', flag: '/Flag_of_France.png' },
+                { code: 'de', name: 'Tedesco', flag: '/Flag_of_Germany.svg.png' },
+              ]"
+            /> -->
+          
+          <!-- -------------------------- -->
+        
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             lingua <span>
               <img src="/Flag_of_Italy.svg.png" class="flags" alt="">
@@ -89,7 +99,7 @@ export default {
           <ul class="dropdown-menu p-1 ">
             <li class="montegrino-scroll-nav">
               <a class="dropdown-item" href="#">
-                <img src="public/Flag_of_Italy.svg.png" class="flags" alt=""> Italiano
+                <img src="/Flag_of_Italy.svg.png" class="flags" alt=""> Italiano
               </a>
             </li>
             <li class="montegrino-scroll-nav">
@@ -111,7 +121,9 @@ export default {
         </li>
 
       </ul>
-
+      
+      
+      <!-- -------------------------- -->
     </div>
 
   </nav>
