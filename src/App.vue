@@ -3,12 +3,12 @@
 //import LanguageSwitcher from './components/LanguageSwitcher.vue';
 
 export default {
-  components: {
-    //LanguageSwitcher, //Registro il componente LanguageSwitcher
-
+  methods: {
+    changeLocale(locale) {
+      this.$i18n.locale = locale;
+      
+    }
   }
-
-
 }
 </script>
 
@@ -40,13 +40,13 @@ export default {
           <router-link to="/" class="nav-link">{{ $t('home') }}</router-link>
         </li>
         <li class="nav-item me-5 ">
-          <router-link to="/chisiamo" class="nav-link">Chi Siamo</router-link>
+          <router-link to="/chisiamo" class="nav-link">{{ $t('chiSiamo') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/galleria" class="nav-link">Galleria</router-link>
+          <router-link to="/galleria" class="nav-link">{{ $t('galleria') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/recensioni" class="nav-link">Recensioni</router-link>
+          <router-link to="/recensioni" class="nav-link">{{ $t('recensioni') }}</router-link>
         </li>
       </ul>
 
@@ -63,47 +63,37 @@ export default {
 
       <ul class="navbar-nav ms-4 ">
         <li class="nav-item me-5">
-          <router-link to="/servizi" class="nav-link" >Servizi</router-link>
+          <router-link to="/servizi" class="nav-link">{{ $t('servizi') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/contatti" class="nav-link" >Contatti</router-link>
+          <router-link to="/contatti" class="nav-link">{{ $t('contatti') }}</router-link>
         </li>
         <li class="nav-item me-5">
           <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita"
-            target="_self" class="nav-link">Prenota</a>
+            target="_self" class="nav-link">{{ $t('prenota') }}</a>
         </li>
-        <li class="nav-item me-5">
-          <router-link to="/lingua" class="nav-link" >Lingua</router-link>
-        </li>
+        <!-- <li class="nav-item me-5">
+          <router-link to="/lingua" class="nav-link">{{ $t('lingua') }}</router-link>
+        </li> -->
+
+
         <!-- -----lingua2 ----- -->
         <li class="nav-item dropdown ">
-          <!-- LanguageSwitche componente -->
-
-            <!-- <LanguageSwitcher
-              :currentLanguage="'italiano'" 
-              :languages="[
-                { code: 'it', name: 'Italiano', flag: '/Flag_of_Italy.svg.png' },
-                { code: 'en', name: 'Inglese', flag: '/Flag_of_the_United_Kingdom.png' },
-                { code: 'fr', name: 'Francese', flag: '/Flag_of_France.png' },
-                { code: 'de', name: 'Tedesco', flag: '/Flag_of_Germany.svg.png' },
-              ]"
-            /> -->
-          
           <!-- -------------------------- -->
-        
+
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            lingua <span>
+            {{ $t('lingua') }} <span>
               <img src="/Flag_of_Italy.svg.png" class="flags" alt="">
             </span>
           </a>
           <ul class="dropdown-menu p-1 ">
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" @click="changeLocale('it')" >
                 <img src="/Flag_of_Italy.svg.png" class="flags" alt=""> Italiano
               </a>
             </li>
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" @click="changeLocale('en')" >
                 <img src="/Flag_of_the_United_Kingdom.png" class="flags" alt=""> Inglese
               </a>
             </li>
@@ -121,8 +111,8 @@ export default {
         </li>
 
       </ul>
-      
-      
+
+
       <!-- -------------------------- -->
     </div>
 

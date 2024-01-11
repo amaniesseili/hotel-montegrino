@@ -1,3 +1,13 @@
+
 {
-  "home": "home-it"
+  
+  "home": "Home",
+  "chiSiamo": "Chi Siamo",
+  "galleria": "Galleria",
+  "recensioni": "Recensioni",
+  "servizi": "Servizi",
+  "contatti": "Contatti",
+  "prenota": "Prenota",
+  "lingua": "Lingua "
+
 }

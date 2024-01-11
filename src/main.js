@@ -21,7 +21,7 @@ import { router } from "./router";
 
 
 const i18n = createI18n({
-  locale: 'it',
+  locale: 'en',
   messages: {
     en: en,
     it: it,
