@@ -113,12 +113,12 @@ export default {
             </li>
             <li class="montegrino-scroll-nav">
               <a class="dropdown-item " href="#" @click="changeLocale ('fr')"  >
-                <img src="/Flag_of_france.png" class="flags" alt=""> Francese
+                <img src="/Flag_of_fr.png" class="flags" alt=""> Francese
               </a>
             </li>
             <li class="montegrino-scroll-nav">
               <a class="dropdown-item" href="#" @click="changeLocale ('de')">
-                <img src="/Flag_of_Germany.svg.png" class="flags" alt=""> Tedesco
+                <img src="/Flag_of_de.png" class="flags" alt=""> Tedesco
               </a>
             </li>
           </ul>

@@ -1,12 +1,13 @@
 {
   
-  "home": "Home fr",
-  "chiSiamo": "About Us fr",
-  "galleria": "Gallery",
-  "recensioni": "Reviews",
+  "home": "Accueil",
+  "chiSiamo": "À propos de nous",
+  "galleria": "Galerie",
+  "recensioni": "Avis",
   "servizi": "Services",
-  "contatti": "Contact us",
-  "prenota": "Book",
-  "lingua": "Language"
+  "contatti": "Contactez-nous",
+  "prenota": "Réserver",
+  "lingua": "Langue"
 
 }
+
