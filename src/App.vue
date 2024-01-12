@@ -1,15 +1,29 @@
 <script>
-
-//import LanguageSwitcher from './components/LanguageSwitcher.vue';
-
 export default {
+  data() {
+    return {
+      currentLanguage: 'it', // Lingua corrente, inizializzata con italiano
+      flagExtension: 'svg', // Estensione predefinita del flag
+    };
+  },
+  computed: {
+    currentLanguageFlag() {
+      const languageCode = this.currentLanguage.toLowerCase(); // Converto il codice della lingua in minuscolo
+      const flagPath = `/Flag_of_${languageCode}.${this.flagExtension}`;
+      console.log('Flag Path:', flagPath);
+      return flagPath;
+    },
+  },
+  
   methods: {
     changeLocale(locale) {
       this.$i18n.locale = locale;
-      
-    }
-  }
-}
+      this.currentLanguage = locale;
+      // Aggiorna l'estensione del flag se necessario
+      this.flagExtension = locale === 'it' ? 'svg' : 'png';
+    },
+  },
+};
 </script>
 
 <template>
@@ -83,27 +97,27 @@ export default {
 
           <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {{ $t('lingua') }} <span>
-              <img src="/Flag_of_Italy.svg.png" class="flags" alt="">
+              <img :src="currentLanguageFlag" class="flags" alt="">
             </span>
           </a>
           <ul class="dropdown-menu p-1 ">
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item" href="#" @click="changeLocale('it')" >
-                <img src="/Flag_of_Italy.svg.png" class="flags" alt=""> Italiano
+              <a class="dropdown-item" href="#" @click="changeLocale ('it')" >
+                <img src="/Flag_of_it.svg" class="flags" alt=""> Italiano
               </a>
             </li>
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item" href="#" @click="changeLocale('en')" >
-                <img src="/Flag_of_the_United_Kingdom.png" class="flags" alt=""> Inglese
+              <a class="dropdown-item" href="#" @click="changeLocale ('en')" >
+                <img src="/Flag_of_en.png" class="flags" alt=""> Inglese
               </a>
             </li>
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item " href="#">
-                <img src="/Flag_of_France.png" class="flags" alt=""> Francese
+              <a class="dropdown-item " href="#" @click="changeLocale ('fr')"  >
+                <img src="/Flag_of_france.png" class="flags" alt=""> Francese
               </a>
             </li>
             <li class="montegrino-scroll-nav">
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" @click="changeLocale ('de')">
                 <img src="/Flag_of_Germany.svg.png" class="flags" alt=""> Tedesco
               </a>
             </li>

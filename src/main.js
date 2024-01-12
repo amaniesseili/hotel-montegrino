@@ -5,26 +5,23 @@ import App from './App.vue'
 import { createI18n } from 'vue-i18n'
 import en from './locale/en.json'
 import it from './locale/it.json'
+import fr from './locale/fr.json'
+import de from './locale/de.json'
 
 // Utilizzo del router nel main file (main.js)
 import { router } from "./router";
-
-
-//per it8n.js-------------------
-// const app = createApp(App);
-// app.use(i18n);
-// app.mount('#app');-----------
-
 
 
 
 
 
 const i18n = createI18n({
-  locale: 'en',
+  locale: 'it',
   messages: {
     en: en,
     it: it,
+    fr: fr,
+    de: de,
 
   }
 })
