@@ -13,10 +13,13 @@
 
 
 
+
   "welcomeMessage": "BENVENUTO AL",
   "hotelName": "Montegrino Hotel",
   "slogan": "Il tuo Rifugio Perfetto nella Natura",
   "bookNow": "Prenota Ora",
+
+
 
 
 
@@ -36,6 +39,46 @@
   "barOverlay": {
     "title": "Bar",
     "description": "Il nostro bar è un'oasi di relax e socialità, dove potrai gustare bevande di qualità e deliziarti con piacevoli momenti conviviali, immerso in un'atmosfera accogliente e raffinata."
+  },
+
+
+
+
+
+  "gallery": {
+    "title": "Esplora il nostro mondo",
+    "description": "Esplora la nostra galleria di immagini e immergiti nella bellezza dell'Hotel Montegrino. Dalle accoglienti camere all'atmosfera del nostro bar, ogni foto cattura l'essenza del nostro rifugio nella natura. Scopri dettagli unici e lasciati ispirare da una visualizzazione incantevole della nostra struttura."
+  },
+
+
+
+
+  "reviewsTitle": "Cosa Dicono di Noi",
+  "rating": {
+    "average": "4.7",
+    "googleLink": "Su "
+  },
+  "reviewsDescription": "Scoprite cosa dicono i nostri ospiti di noi. Leggete recensioni autentiche e condividete le vostre esperienze. La vostra soddisfazione è la nostra priorità, e ogni parola condivisa contribuisce a plasmare l'ospitalità unica dell'Hotel Montegrino. Grazie per essere parte della nostra storia e per permetterci di rendere ogni soggiorno memorabile.",
+  "readMoreBtn": "Leggi più recensioni su Google",
+
+
+  "reviews": {
+    "review1": {
+      "content": "Hotel immerso nel verde! Molto tranquillo e accogliente...",
+      "translatedContent": "Hotel immerso nel verde! Molto tranquillo e accogliente..."
+    },
+    "review2": {
+      "content": "Sono stato 3 notti e non ho nulla da lamentarmi! Sono gentilissimi, mi sono sentito come a casa. Sicuro ci ritorno!",
+      "translatedContent": "Sono stato 3 notti e non ho nulla da lamentarmi! Sono gentilissimi, mi sono sentito come a casa. Sicuro ci ritorno!"
+    },
+    "review3": {
+      "content": "Abbiamo soggiornato qui due notti a fine aprile, una favola! Hotel molto semplice ma davvero carino. Molto pulito, personale molto accogliente e disponibile. La camera era davvero pulita. Letto King size molto comodo!",
+      "translatedContent": "Abbiamo soggiornato qui due notti a fine aprile, una favola! Hotel molto semplice ma davvero carino. Molto pulito, personale molto accogliente e disponibile. La camera era davvero pulita. Letto King size molto comodo"
+    },
+    "review4": {
+      "content": "Un albergo da consigliare. Molto carino, il personale gentilissimo è soprattutto a disposizione 24 su 24 ore. Camere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato",
+      "translatedContent": "Un albergo da consigliare. Molto carino, il personale gentilissimo è soprattutto a disposizione 24 su 24 ore. Camere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato"
+    }
   }
   
 }

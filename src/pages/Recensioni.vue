@@ -41,20 +41,17 @@ export default {
     <div class="row">
       <div class="col-2"></div>
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
-        <h1 class="reviews-title">Cosa Dicono di Noi</h1>
+        <h1 class="reviews-title">{{ $t ('reviewsTitle')}}</h1>
         <div class="d-flex align-items-center">
           <h3 class="me-2"> 4.7 </h3>
           <div class="google-rating ">
             <div class="rating-percentage"></div>
           </div>
-          <small class="ms-2"> Su 
+          <small class="ms-2"> {{ $t ('rating.googleLink')}} 
             <img src="/google-logo-png2.png"  style="width: 17px;" alt="google-logo">
               Google</small>
         </div>
-        <p class="mt-1 text-center">Scoprite cosa dicono i nostri ospiti di noi. Leggete recensioni autentiche e condividete le
-          vostre esperienze. La vostra soddisfazione è la nostra priorità, e ogni parola condivisa contribuisce a plasmare
-          l'ospitalità unica dell'Hotel Montegrino. Grazie per essere parte della nostra storia e per permetterci di
-          rendere ogni soggiorno memorabile.</p>
+        <p class="mt-1 text-center">{{ $t ('reviewsDescription')}}</p>
 
       </div>
     </div>
@@ -68,10 +65,10 @@ export default {
           <img :src="review.image" class="card-img-top card-img-circle" alt="Reviewer">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">{{ review.title }}</h5>
-            <small class="review-date">{{ review.date }} su
+            <small class="review-date">{{ review.date }} 
               <img src="/google-logo-png2.png" style="width: 17px;" alt="google-logo"> Google
             </small>
-            <p class="card-text mt-2 flex-grow-1">{{ review.content }}</p>
+            <p class="card-text mt-2 flex-grow-1">{{ $t('reviews.' + 'review' + (index + 1) + '.translatedContent') }}</p>
             <div class="rating">
               <i class="fa-solid fa-star me-1"></i>
               <i class="fa-solid fa-star me-1"></i>
@@ -89,8 +86,7 @@ export default {
       <div class="col-4"></div>
       <div class="col-4">
         <a href="https://www.google.it/travel/hotels/hotel%20montegrino/entity/CgoIr9D4u_fEvdFREAE/reviews?q=hotel%20montegrino&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4284970%2C4754388%2C4757164%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C4990494%2C72277293%2C72298667%2C72302247%2C72317059%2C72385362%2C72406588%2C72408738%2C72412680%2C72414906%2C72414907%2C72421565%2C72430562%2C72436632%2C72439728%2C72440517&hl=it-IT&gl=it&ssta=1&ts=CAEaSQorEicyJTB4NDc4NWQxM2JkNzQyYWM3MzoweDUxYTJmNjI3Nzc3ZTI4MmYaABIaEhQKBwjnDxAMGAISBwjnDxAMGAMYATICEAAqCQoFOgNFVVIaAA&rp=EK_Q-Lv3xL3RURCv0Pi798S90VE4AkAASAHAAQKaAgIIAA&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAjrebluyCAxUAAAAAHQAAAAAQCQ"
-          class="btn btn-primary read-more-btn text-center" target="_blank">Leggi più recensioni su
-          Google</a>
+          class="btn btn-primary read-more-btn text-center" target="_blank">{{ $t ('readMoreBtn')}}</a>
       </div>
     </div>
   </div>

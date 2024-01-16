@@ -33,6 +33,46 @@
   "barOverlay": {
     "title": "Bar",
     "description": "Unsere Bar ist eine Oase der Entspannung und Geselligkeit, in der Sie hochwertige Getränke genießen und sich an angenehmen sozialen Momenten erfreuen können, eingetaucht in eine einladende und raffinierte Atmosphäre."
+  },
+
+
+
+
+
+  "gallery": {
+    "title": "Erkunde unsere Welt",
+    "description": "Erkunde unsere Bildergalerie und tauche ein in die Schönheit des Hotel Montegrino. Von gemütlichen Zimmern bis zur Atmosphäre unserer Bar fängt jedes Foto die Essenz unseres Rückzugsorts in der Natur ein. Entdecke einzigartige Details und lasse dich von einem bezaubernden Blick auf unser Anwesen inspirieren."
+  },
+
+
+
+
+  "reviewsTitle": "Was Unsere Gäste Sagen",
+  "rating": {
+    "average": "4.7",
+    "googleLink": "Auf"
+  },
+  "reviewsDescription": "Erfahren Sie, was unsere Gäste über ihre Erfahrungen sagen. Lesen Sie authentische Bewertungen und teilen Sie Ihre eigenen. Ihre Zufriedenheit hat für uns oberste Priorität, und jedes geteilte Wort trägt dazu bei, die einzigartige Gastfreundschaft des Hotel Montegrino zu gestalten. Vielen Dank, dass Sie Teil unserer Geschichte sind und es uns ermöglichen, jeden Aufenthalt unvergesslich zu machen.",
+
+  "readMoreBtn": "Mehr Bewertungen auf Google Lesen",
+
+  "reviews": {
+    "review1": {
+      "content": "Hotel mitten im Grünen! Sehr ruhig und einladend...",
+      "translatedContent": "Hotel mitten im Grünen! Sehr ruhig und einladend..."
+    },
+    "review2": {
+      "content": "Ich war 3 Nächte hier und habe nichts zu beanstanden! Sie sind sehr freundlich, ich habe mich wie zu Hause gefühlt. Komme auf jeden Fall wieder!",
+      "translatedContent": "Ich war 3 Nächte hier und habe nichts zu beanstanden! Sie sind sehr freundlich, ich habe mich wie zu Hause gefühlt. Komme auf jeden Fall wieder!"
+    },
+    "review3": {
+      "content": "Wir haben hier zwei Nächte Ende April verbracht, ein Märchen! Das Hotel ist sehr einfach, aber wirklich schön. Sehr sauber, sehr freundliches und hilfsbereites Personal. Das Zimmer war wirklich sauber. Sehr bequemes Kingsize-Bett!",
+      "translatedContent": "Wir haben hier zwei Nächte Ende April verbracht, ein Märchen! Das Hotel ist sehr einfach, aber wirklich schön. Sehr sauber, sehr freundliches und hilfsbereites Personal. Das Zimmer war wirklich sauber. Sehr bequemes Kingsize-Bett!"
+    },
+    "review4": {
+      "content": "Ein Hotel, das man empfehlen kann. Sehr schön, das Personal ist sehr freundlich und vor allem rund um die Uhr verfügbar. Zimmer von ausgezeichneter Sauberkeit und das Frühstück ist reichhaltig. Wir werden uns sicher wiedersehen. S.Scarpato",
+      "translatedContent": "Ein Hotel, das man empfehlen kann. Sehr schön, das Personal ist sehr freundlich und vor allem rund um die Uhr verfügbar. Zimmer von ausgezeichneter Sauberkeit und das Frühstück ist reichhaltig. Wir werden uns sicher wiedersehen. S.Scarpato"
+    }
   }
 
 }

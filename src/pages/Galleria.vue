@@ -11,8 +11,8 @@ export default {
     <div class="row">
       <div class="col-2"></div>
       <div class="col-8">
-        <h1 class="gallery-title text-center">Esplora il nostro mondo</h1>
-        <p class="gallery-description text-center mb-3 mt-3">Esplora la nostra galleria di immagini e immergiti nella bellezza dell'Hotel Montegrino. Dalle accoglienti camere all'atmosfera del nostro bar, ogni foto cattura l'essenza del nostro rifugio nella natura. Scopri dettagli unici e lasciati ispirare da una visualizzazione incantevole della nostra struttura.</p>
+        <h1 class="gallery-title text-center">{{ $t ('gallery.title')}}</h1>
+        <p class="gallery-description text-center mb-3 mt-3"> {{ $t ('gallery.description')}}</p>
 
       </div>
     </div>

@@ -34,6 +34,46 @@
   "barOverlay": {
     "title": "Bar",
     "description": "Notre bar est une oasis de détente et de convivialité, où vous pourrez déguster des boissons de qualité et vous délecter de moments sociaux agréables, plongé dans une atmosphère accueillante et raffinée."
+  },
+
+
+
+
+
+  "gallery": {
+    "title": "Explorez notre monde",
+    "description": "Explorez notre galerie d'images et plongez-vous dans la beauté de l'Hôtel Montegrino. Des chambres confortables à l'atmosphère de notre bar, chaque photo capture l'essence de notre refuge dans la nature. Découvrez des détails uniques et laissez-vous inspirer par une vue charmante de notre établissement."
+  },
+
+
+
+
+  "reviewsTitle": "Ce Que Nos Clients Disent",
+  "rating": {
+    "average": "4.7",
+    "googleLink": "Sur"
+  },
+  "reviewsDescription": "Découvrez ce que nos clients disent de leurs expériences. Lisez des avis authentiques et partagez les vôtres. Votre satisfaction est notre priorité, et chaque mot partagé contribue à façonner l'hospitalité unique de l'Hôtel Montegrino. Merci de faire partie de notre histoire et de nous permettre de rendre chaque séjour mémorable.",
+
+  "readMoreBtn": "Lire Plus d'Avis sur Google",
+
+  "reviews": {
+    "review1": {
+      "content": "Hôtel immergé dans la verdure ! Très calme et accueillant...",
+      "translatedContent": "Hôtel immergé dans la verdure ! Très calme et accueillant..."
+    },
+    "review2": {
+      "content": "J'ai séjourné pendant 3 nuits et je n'ai rien à redire ! Ils sont très gentils, je me suis senti chez moi. Je reviendrai à coup sûr !",
+      "translatedContent": "J'ai séjourné pendant 3 nuits et je n'ai rien à redire ! Ils sont très gentils, je me suis senti chez moi. Je reviendrai à coup sûr !"
+    },
+    "review3": {
+      "content": "Nous avons séjourné ici deux nuits fin avril, un conte de fées ! L'hôtel est très simple mais vraiment agréable. Très propre, personnel très accueillant et serviable. La chambre était vraiment propre. Très grand lit confortable !",
+      "translatedContent": "Nous avons séjourné ici deux nuits fin avril, un conte de fées ! L'hôtel est très simple mais vraiment agréable. Très propre, personnel très accueillant et serviable. La chambre était vraiment propre. Très grand lit confortable !"
+    },
+    "review4": {
+      "content": "Un hôtel à recommander. Très agréable, le personnel est très gentil et surtout disponible 24/7. Chambres d'une propreté excellente, et le petit déjeuner est copieux. Nous nous reverrons certainement. S.Scarpato",
+      "translatedContent": "Un hôtel à recommander. Très agréable, le personnel est très gentil et surtout disponible 24/7. Chambres d'une propreté excellente, et le petit déjeuner est copieux. Nous nous reverrons certainement. S.Scarpato"
+    }
   }
 
 }

@@ -35,7 +35,59 @@
   "barOverlay": {
     "title": "Bar",
     "description": "Our bar is an oasis of relaxation and sociability, where you can enjoy quality drinks and delight in pleasant social moments, immersed in a welcoming and refined atmosphere."
-  }
+  },
+
+
+
+
+
+  "gallery": {
+    "title": "Explore Our World",
+    "description": "Explore our gallery of images and immerse yourself in the beauty of Hotel Montegrino. From cozy rooms to the atmosphere of our bar, each photo captures the essence of our retreat in nature. Discover unique details and be inspired by a delightful view of our property."
+  },
+
+
+
+
+  "reviewsTitle": "What Our Guests Say",
+  "rating": {
+    "average": "4.7",
+    "googleLink": "On"
+  },
+  "reviewsDescription": "Discover what our guests are saying about their experiences. Read authentic reviews and share your own. Your satisfaction is our priority, and every shared word contributes to shaping the unique hospitality of Hotel Montegrino. Thank you for being part of our story and allowing us to make every stay memorable.",
+
+  "readMoreBtn": "Read More Reviews on Google",
+
+
+      "review1_content": "Hotel immersed in greenery! Very quiet and welcoming...",
+
+      "review2_content": "I stayed for 3 nights and have nothing to complain about! They are very kind, I felt at home. Definitely coming back!",
+
+      "review3_content": "We stayed here for two nights at the end of April, a fairy tale! The hotel is very simple but really nice. Very clean, very welcoming and helpful staff. The room was really clean. Very comfortable king-size bed!",
+
+      "review4_content": "A hotel to recommend. Very nice, the staff is very kind and above all available 24/7. Rooms of excellent cleanliness, and breakfast is plentiful. We will certainly meet again. S.Scarpato",
+
+
+      "reviews": {
+        "review1": {
+          "content": "Hotel immersed in greenery! Very quiet and welcoming...",
+          "translatedContent": "Hotel immersed in greenery! Very quiet and welcoming..."
+        },
+        "review2": {
+          "content": "I stayed for 3 nights and have nothing to complain about! They are very kind, I felt at home. Definitely coming back!",
+          "translatedContent": "I stayed for 3 nights and have nothing to complain about! They are very kind, I felt at home. Definitely coming back!"
+        },
+        "review3": {
+          "content": "We stayed here for two nights at the end of April, a fairy tale! The hotel is very simple but really nice. Very clean, very welcoming and helpful staff. The room was really clean. Very comfortable king-size bed!",
+          "translatedContent": "We stayed here for two nights at the end of April, a fairy tale! The hotel is very simple but really nice. Very clean, very welcoming and helpful staff. The room was really clean. Very comfortable king-size bed!"
+        },
+        "review4": {
+          "content": "A hotel to recommend. Very nice, the staff is very kind and above all available 24/7. Rooms of excellent cleanliness, and breakfast is plentiful. We will certainly meet again. S.Scarpato",
+          "translatedContent": "A hotel to recommend. Very nice, the staff is very kind and above all available 24/7. Rooms of excellent cleanliness, and breakfast is plentiful. We will certainly meet again. S.Scarpato"
+        }
+       
+      }
+      
 
 
 }
