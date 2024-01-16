@@ -6,21 +6,15 @@ export default {
 <template>
   <div>
     <div class="container-fluid bg-page d-flex justify-content-center align-items-center flex-column">
-      <h1>Hotel Montegrino</h1>
-      <p class="text-center mb-5 mt-3">L'Hotel Montegrino è un rifugio incantevole immerso nella natura, dove il comfort
-        si fonde armoniosamente con l'ambiente circostante. Con una vista mozzafiato e un'atmosfera accogliente, l'hotel
-        offre un'esperienza unica di relax e tranquillità. La sua reception accogliente è pronta ad assisterti con un
-        servizio premuroso, mentre le camere sono progettate per offrire comfort e calore. Esplora i dettagli delle nostre
-        camere, immergiti nella serenità del nostro bar, e lasciati coccolare dalla magia di Montegrino. Benvenuto in un
-        luogo dove l'ospitalità diventa un'arte e ogni momento è un ricordo da custodire.</p>
+      <h1>{{ $t('contactUsPageTitle') }}</h1>
+      <p class="text-center mb-5 mt-3">  {{ $t ('contactUsPageDescription') }} </p>
       <div class=" row d-flex">
 
         <div class="card col-lg-4 col-md-6">
           <img src="/bg-homepage.jpg" class="card-img" alt="Reception">
           <div class="card-img-overlay card-img-overlay-info">
-            <h5 class="card-title">Reception</h5>
-            <p class="card-text">Cuore accogliente dell'Hotel Montegrino, la nostra reception è pronta a offrirti un
-              servizio personalizzato e consigli utili per rendere il tuo soggiorno indimenticabile.</p>
+            <h5 class="card-title">{{$t ('receptionOverlay.title')}}</h5>
+            <p class="card-text">{{$t ('receptionOverlay.description')}}</p>
           </div>
         </div>
 
@@ -28,18 +22,16 @@ export default {
         <div class="card col-lg-4 col-md-6 ">
           <img src="/bg-homepage.jpg" class="card-img" alt="Camere">
           <div class="card-img-overlay card-img-overlay-info">
-            <h5 class="card-title">Camere</h5>
-            <p class="card-text">Le nostre camere sono eleganti rifugi di comfort, pensate per offrire un'esperienza di
-              soggiorno unica e rilassante, con arredi accoglienti e attenzione ai dettagli.</p>
+            <h5 class="card-title"> {{ $t ('roomsOverlay.title')}}</h5>
+            <p class="card-text">{{ $t ('roomsOverlay.description')}}</p>
           </div>
         </div>
 
         <div class="card col-lg-4 col-md-6">
           <img src="/bg-homepage.jpg" class="card-img" alt="Bar">
           <div class="card-img-overlay card-img-overlay-info">
-            <h5 class="card-title">Bar</h5>
-            <p class="card-text">Il nostro bar è un'oasi di relax e socialità, dove potrai gustare bevande di qualità e
-              deliziarti con piacevoli momenti conviviali, immerso in un'atmosfera accogliente e raffinata.</p>
+            <h5 class="card-title">{{ $t ('barOverlay.title')}}</h5>
+            <p class="card-text">{{ $t ('barOverlay.description')}}.</p>
           </div>
         </div>
       </div>

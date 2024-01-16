@@ -7,6 +7,32 @@
   "servizi": "Dienstleistungen",
   "contatti": "Kontakt",
   "prenota": "Buchen",
-  "lingua": "Sprache"
+  "lingua": "Sprache",
+
+
+  "welcomeMessage": "WILLKOMMEN IM",
+  "hotelName": "Montegrino Hotel",
+  "slogan": "Ihr perfekter Rückzugsort in der Natur Jetzt buchen",
+  "bookNow": "Jetzt Buchen",
+
+
+
+  "contactUsPageTitle": "Hotel Montegrino",
+  "contactUsPageDescription": "Das Hotel Montegrino ist ein charmantes Refugium mitten in der Natur, wo sich Komfort harmonisch mit der umgebenden Umgebung verbindet. Mit atemberaubender Aussicht und einer einladenden Atmosphäre bietet das Hotel eine einzigartige Erfahrung der Entspannung und Ruhe. Die einladende Rezeption steht bereit, Ihnen mit aufmerksamem Service zu helfen, während die Zimmer darauf ausgelegt sind, Komfort und Wärme zu bieten. Entdecken Sie die Details unserer Zimmer, tauchen Sie ein in die Gelassenheit unserer Bar und lassen Sie sich von der Magie von Montegrino verwöhnen. Willkommen an einem Ort, an dem Gastfreundschaft zur Kunst wird und jeder Moment eine Erinnerung ist, die es wert ist, bewahrt zu werden.",
+
+  "receptionOverlay": {
+    "title": "Rezeption",
+    "description": "Das einladende Herz des Hotel Montegrino, unsere Rezeption, steht bereit, Ihnen einen persönlichen Service und hilfreiche Ratschläge zu bieten, um Ihren Aufenthalt unvergesslich zu machen."
+  },
+
+  "roomsOverlay": {
+    "title": "Zimmer",
+    "description": "Unsere Zimmer sind elegante Rückzugsorte des Komforts, konzipiert für einen einzigartigen und entspannenden Aufenthalt mit gemütlicher Einrichtung und Liebe zum Detail."
+  },
+
+  "barOverlay": {
+    "title": "Bar",
+    "description": "Unsere Bar ist eine Oase der Entspannung und Geselligkeit, in der Sie hochwertige Getränke genießen und sich an angenehmen sozialen Momenten erfreuen können, eingetaucht in eine einladende und raffinierte Atmosphäre."
+  }
 
 }

@@ -1,6 +1,21 @@
 <script>
 export default {
-
+  computed: {
+    bookNowLink() {
+      // devo inserire  il link appropriato per la prenotazione 
+      // in base alla lingua corrente ( si trova nello mail di vertical booking)
+      switch (this.$i18n.locale) {
+        case 'it':
+          return 'https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita';
+        case 'de':
+          return 'https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ger';
+        case 'fr':
+          return 'https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=fra';
+        default:
+          return '#';
+      }
+    }
+  }
 }
 </script>
 <template>
@@ -8,15 +23,15 @@ export default {
 
     <div class="welcome-box">
       <div id="welcome">
-        <h4 class="welcome-message">BENVENUTO AL</h4>
-        <h1 class="montegrino-name">Montegrino Hotel</h1>
+        <h4 class="welcome-message">{{ $t('welcomeMessage') }}</h4>
+        <h1 class="montegrino-name">{{ $t('hotelName')}}</h1>
       </div>
 
       <div id="slogan">
-        <p>Il tuo Rifugio Perfetto nella Natura</p>
+        <p>{{ $t('slogan')}}</p>
       </div>
 
-      <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" id="book-now-btn">Prenota Ora</a>
+      <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita" id="book-now-btn">{{ $t('bookNow')}}</a>
     
     </div>
 

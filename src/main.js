@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style/general.scss'
 import App from './App.vue'
-//import i18n from './i18n'
+
 import { createI18n } from 'vue-i18n'
 import en from './locale/en.json'
 import it from './locale/it.json'
