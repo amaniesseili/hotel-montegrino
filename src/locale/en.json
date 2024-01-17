@@ -85,7 +85,40 @@
           "content": "A hotel to recommend. Very nice, the staff is very kind and above all available 24/7. Rooms of excellent cleanliness, and breakfast is plentiful. We will certainly meet again. S.Scarpato",
           "translatedContent": "A hotel to recommend. Very nice, the staff is very kind and above all available 24/7. Rooms of excellent cleanliness, and breakfast is plentiful. We will certainly meet again. S.Scarpato"
         }
-       
+      },
+
+
+
+
+
+      "servicesTitle": "Services",
+      "servicesDescription": "Our welcoming <strong>reception</strong> is ready to assist you between <strong>9:00 and 22:00</strong>, providing dedicated and available service. <strong>Check-in</strong> is available from <strong>14:00 to 22:00</strong>, and <strong>check-out by 11:00</strong>. We are here to make your arrival and departure as smooth as possible",
+
+      "services": {
+        "service1": "Buffet Breakfast: 07:00-10:00",
+        "service2": "Multilingual Staff: ITA, ENG, FR",
+        "service3": "Secretarial Services: photocopies, fax",
+        "service4": "Heating",
+        "service5": "Elevator",
+        "service6": "Free Wi-Fi",
+        "service7": "Daily Cleaning",
+        "service8": "Cribs on Request",
+        "service9": "Souvenir Shop",
+        "service10": "Available Family Rooms",
+        "service11": "Solarium Terrace",
+        "service12": "Kettle and Microwave Available",
+        "service13": "Rooms with Private Bathroom, Linens, and Hairdryer",
+        "service14": "Balconies/Patio (in most rooms)",
+        "service15": "Free On-Site Parking (Uncovered)",
+        "service16": "Free Garage for Bikes/Motorcycles (Covered)",
+        "service17": "Pets Allowed (Small/Medium Size) at No Extra Charge",
+        "service18": "Free Bicycle Storage (Bike Room)",
+        "service19": "Room Facilities: Wardrobe, Flat-Screen TV, Desk, Luggage Rack, Small Fridge",
+        "service20": "Entirely Non-Smoking Facility",
+        "service21": "Hammocks",
+        "service22": "Free Luggage Storage",
+        "service23": "Garden/Woodland and Picnic Area",
+        "service24": "Accepts Cards: VISA, MASTERCARD, American Express, BANCOMAT, MAESTRO"
       }
       
 

@@ -73,6 +73,39 @@
       "content": "Ein Hotel, das man empfehlen kann. Sehr schön, das Personal ist sehr freundlich und vor allem rund um die Uhr verfügbar. Zimmer von ausgezeichneter Sauberkeit und das Frühstück ist reichhaltig. Wir werden uns sicher wiedersehen. S.Scarpato",
       "translatedContent": "Ein Hotel, das man empfehlen kann. Sehr schön, das Personal ist sehr freundlich und vor allem rund um die Uhr verfügbar. Zimmer von ausgezeichneter Sauberkeit und das Frühstück ist reichhaltig. Wir werden uns sicher wiedersehen. S.Scarpato"
     }
+  },
+
+
+
+
+
+  "servicesTitle": "Dienstleistungen",
+  "servicesDescription": "Unsere einladende <strong>Rezeption</strong> steht Ihnen zwischen <strong>9:00 und 22:00 Uhr</strong> zur Verfügung und bietet einen engagierten und verfügbaren Service. Das <strong>Einchecken</strong> ist von <strong>14:00 bis 22:00 Uhr</strong> möglich und das <strong>Auschecken</strong> bis <strong>11:00 Uhr</strong>. Wir sind hier, um Ihre An- und Abreise so reibungslos wie möglich zu gestalten.",
+  "services": {
+    "service1": "Buffetfrühstück: 07:00-10:00 Uhr",
+    "service2": "Mehrsprachiges Personal: ITA, ENG, FR",
+    "service3": "Sekretariatsdienste: Kopien, Fax",
+    "service4": "Heizung",
+    "service5": "Aufzug",
+    "service6": "Kostenloses WLAN",
+    "service7": "Tägliche Reinigung",
+    "service8": "Kinderbetten auf Anfrage",
+    "service9": "Souvenirgeschäft",
+    "service10": "Familienzimmer verfügbar",
+    "service11": "Solariumterrasse",
+    "service12": "Wasserkocher und Mikrowelle verfügbar",
+    "service13": "Zimmer mit eigenem Bad, Bettwäsche und Haartrockner",
+    "service14": "Balkone/Terrasse (in den meisten Zimmern)",
+    "service15": "Kostenloser Parkplatz vor Ort (unüberdacht)",
+    "service16": "Kostenlose Garage für Fahrräder/Motorräder (überdacht)",
+    "service17": "Haustiere erlaubt (kleine/mittlere Größe) ohne Aufpreis",
+    "service18": "Kostenlose Fahrradabstellmöglichkeit (Fahrradraum)",
+    "service19": "Zimmereinrichtungen: Kleiderschrank, Flachbildfernseher, Schreibtisch, Gepäckablage, kleiner Kühlschrank",
+    "service20": "Gesamte Einrichtung Nichtraucher",
+    "service21": "Hängematten",
+    "service22": "Kostenlose Gepäckaufbewahrung",
+    "service23": "Garten/Wald und Picknickbereich",
+    "service24": "Akzeptanz von Karten: VISA, MASTERCARD, American Express, BANCOMAT, MAESTRO"
   }
 
 }

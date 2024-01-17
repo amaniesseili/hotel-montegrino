@@ -79,6 +79,39 @@
       "content": "Un albergo da consigliare. Molto carino, il personale gentilissimo è soprattutto a disposizione 24 su 24 ore. Camere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato",
       "translatedContent": "Un albergo da consigliare. Molto carino, il personale gentilissimo è soprattutto a disposizione 24 su 24 ore. Camere di ottima pulizia, e colazione a bontà. Ci rivedremo senz'altro. S.Scarpato"
     }
+  },
+
+
+
+
+  "servicesTitle": "Servizi",
+  "servicesDescription": "La nostra accogliente <strong>reception</strong> è pronta ad assisterti tra le <strong>9:00 e le 22:00</strong>, garantendo un servizio dedicato e disponibile. Il <strong>check-in</strong>, disponibile dalle <strong>14:00 alle 22:00</strong>, e il <strong>check-out entro le 11:00</strong>. Siamo qui per rendere il tuo arrivo e la tua partenza il più agevoli possibile.",
+
+  "services": {
+    "service1": "Colazione a buffet: 07:00-10:00",
+    "service2": "Staff multilingue: ITA, ENG, FR",
+    "service3": "Servizi di segreteria: fotocopie, fax",
+    "service4": "Riscaldamento",
+    "service5": "Ascensore",
+    "service6": "Wi-Fi gratuito",
+    "service7": "Pulizia giornaliera",
+    "service8": "Culle su richiesta",
+    "service9": "Negozio souvenir",
+    "service10": "Camere familiari disponibili",
+    "service11": "Terrazza Solarium",
+    "service12": "Bollitore e microonde disponibili",
+    "service13": "Camere con bagno privato, biancheria e asciugacapelli.",
+    "service14": "Balconi/Patio (nella maggior parte delle camere)",
+    "service15": "Parcheggio auto gratuito in loco (Scoperto)",
+    "service16": "Garage gratuito per Bike/Moto (coperto)",
+    "service17": "Animali ammessi (piccola/media taglia) senza supplemento",
+    "service18": "Deposito gratuito per biciclette (Bike room)",
+    "service19": "Dotazioni camere: armadio, Tv a schermo piatto, scrivania, porta bagagli, piccolo frigorifero",
+    "service20": "Struttura interamente non fumatori",
+    "service21": "Amache",
+    "service22": "Custodia bagagli gratuito",
+    "service23": "Giardino/Bosco e Area picnic",
+    "service24": "Accettazione carte: VISA, MASTERCARD, American Express, BANCOMAT, MAESTRO"
   }
   
 }

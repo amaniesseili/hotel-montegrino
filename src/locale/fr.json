@@ -74,6 +74,40 @@
       "content": "Un hôtel à recommander. Très agréable, le personnel est très gentil et surtout disponible 24/7. Chambres d'une propreté excellente, et le petit déjeuner est copieux. Nous nous reverrons certainement. S.Scarpato",
       "translatedContent": "Un hôtel à recommander. Très agréable, le personnel est très gentil et surtout disponible 24/7. Chambres d'une propreté excellente, et le petit déjeuner est copieux. Nous nous reverrons certainement. S.Scarpato"
     }
+  },
+
+
+
+
+
+  "servicesTitle": "Services",
+  "servicesDescription": "Notre accueillante <strong>réception</strong> est prête à vous aider entre <strong>9:00 et 22:00</strong>, offrant un service dédié et disponible. L'enregistrement est possible de <strong>14:00 à 22:00</strong> et le départ avant <strong>11:00</strong>. Nous sommes là pour rendre votre arrivée et votre départ aussi simples que possible.",
+
+  "services": {
+    "service1": "Petit déjeuner buffet : 07h00-10h00",
+    "service2": "Personnel multilingue : ITA, ENG, FR",
+    "service3": "Services de secrétariat : photocopie, fax",
+    "service4": "Chauffage",
+    "service5": "Ascenseur",
+    "service6": "Wi-Fi gratuit",
+    "service7": "Nettoyage quotidien",
+    "service8": "Lits bébé sur demande",
+    "service9": "Boutique de souvenirs",
+    "service10": "Chambres familiales disponibles",
+    "service11": "Terrasse solarium",
+    "service12": "Bouilloire et micro-ondes disponibles",
+    "service13": "Chambres avec salle de bains privative, draps et sèche-cheveux",
+    "service14": "Balcons/Patio (dans la plupart des chambres)",
+    "service15": "Parking gratuit sur place (non couvert)",
+    "service16": "Garage gratuit pour vélos/motos (couvert)",
+    "service17": "Animaux autorisés (petite/moyenne taille) sans supplément",
+    "service18": "Espace de rangement gratuit pour les vélos (salle de vélos)",
+    "service19": "Équipements de la chambre : Armoire, Télévision à écran plat, Bureau, Porte-bagages, Petit réfrigérateur",
+    "service20": "Établissement entièrement non-fumeurs",
+    "service21": "Hamac",
+    "service22": "Conservation gratuite des bagages",
+    "service23": "Jardin/Bois et Aire de pique-nique",
+    "service24": "Accepte les cartes : VISA, MASTERCARD, American Express, BANCOMAT, MAESTRO"
   }
 
 }

@@ -42,8 +42,8 @@ export default {
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <h1 class="text-center mt-4">Servizzi</h1>
-        <p class="text-center">La nostra <strong>reception</strong>  accogliente è pronta ad assisterti tra le <strong> 9:00 e le 22:00</strong>, garantendo un servizio dedicato e disponibile. Il <strong>check-in</strong> , disponibile dalle <br> <strong>14:00 alle 22:00</strong>, e il <strong>check-out entro le 11:00</strong> . Siamo qui per rendere il tuo arrivo e la tua partenza il più agevoli possibile.</p>
+          <h1 class="text-center mt-4">{{ $t('servicesTitle') }}</h1>
+          <p class="text-center" v-html="$t('servicesDescription')"></p>
         </div>
       </div>
       <div class="row">
@@ -51,7 +51,7 @@ export default {
           <div class="service-item  text-center h-100">
             <i :class="service.icon" id="service-icon"></i>
             <!-- <img :src="service.icon" alt="Service Icon" class="service-icon">  -->
-            <p class="service-text">{{ service.text }}</p>
+            <p class="service-text">{{ $t(`services.${'service' + (index + 1)}`) }}</p>
           </div>
         </div>
       </div>
