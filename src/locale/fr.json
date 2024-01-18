@@ -108,6 +108,25 @@
     "service22": "Conservation gratuite des bagages",
     "service23": "Jardin/Bois et Aire de pique-nique",
     "service24": "Accepte les cartes : VISA, MASTERCARD, American Express, BANCOMAT, MAESTRO"
+  },
+
+
+
+
+
+  "contact": {
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "email": "Email",
+    "phone_number": "0039 03321503155",
+    "address_details": "Via Cadorna, 26, 21010, Montegrino Valtravaglia VA",
+    "email_address": "info@hotelmontegrino.it",
+    "form": {
+      "name_label": "Nom et Prénom *",
+      "email_label": "Adresse Email *",
+      "message_label": "Message *",
+      "send_button": "Envoyer le Message"
+    }
   }
 
 }

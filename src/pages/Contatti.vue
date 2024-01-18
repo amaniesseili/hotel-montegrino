@@ -74,15 +74,15 @@ export default {
 
               <form class=" mt-4 me-5" @submit.prevent="submitForm">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Nome e Cognome *</label>
+                  <label for="name" class="form-label">{{ $t('contact.form.name_label') }}</label>
                   <input v-model="formData.name" type="text" class="form-control" id="name" required>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Indirizzo Email *</label>
+                  <label for="email" class="form-label">{{ $t('contact.form.email_label') }}</label>
                   <input v-model="formData.email" type="email" class="form-control" id="email" required>
                 </div>
                 <div class="mb-3">
-                  <label for="message" class="form-label">Messaggio *</label>
+                  <label for="message" class="form-label">{{ $t('contact.form.message_label') }}</label>
                   <textarea v-model="formData.message" class="form-control" id="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn send-mess-btn">Invia Messaggio</button>
