@@ -117,6 +117,8 @@
 
 
 
+  "contactsTitle": "Entra in Contatto con Noi",
+  "contactsDescription": "Per assistenza, ti invitiamo a contattarci tramite telefono, inviarci e-mail o visitare il nostro forum. Garantiamo una pronta risposta alla tua richiesta.",
   
   "contact": {
     "phone": "Telefono",
@@ -125,7 +127,7 @@
     "phone_number": "0039 03321503155",
     "address_details": "Via Cadorna, 26, 21010, Montegrino Valtravaglia VA",
     "email_address": "info@hotelmontegrino.it",
-    
+
     "form": {
       "name_label": "Nome e Cognome *",
       "email_label": "Indirizzo Email *",

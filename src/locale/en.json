@@ -124,7 +124,9 @@
 
 
 
-
+      "contactsTitle": "Get in Touch with Us",
+      "contactsDescription": "For assistance, we invite you to contact us by phone, send us an email, or visit our forum. We guarantee a prompt response to your inquiry.",
+      
       "contact": {
         "phone": "Phone",
         "address": "Address",

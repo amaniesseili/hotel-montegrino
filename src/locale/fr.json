@@ -113,7 +113,9 @@
 
 
 
-
+  "contactsTitle": "Entrez en Contact avec Nous",
+  "contactsDescription": "Pour obtenir de l'aide, nous vous invitons à nous contacter par téléphone, à nous envoyer un e-mail ou à visiter notre forum. Nous garantissons une réponse rapide à votre demande.",
+  
   "contact": {
     "phone": "Téléphone",
     "address": "Adresse",

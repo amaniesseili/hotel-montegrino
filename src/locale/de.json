@@ -111,7 +111,9 @@
 
 
 
-
+  "contactsTitle": "Treten Sie mit uns in Kontakt",
+  "contactsDescription": "Für Unterstützung laden wir Sie ein, uns telefonisch zu kontaktieren, uns eine E-Mail zu senden oder unser Forum zu besuchen. Wir garantieren eine schnelle Antwort auf Ihre Anfrage.",
+  
   "contact": {
     "phone": "Telefon",
     "address": "Adresse",
