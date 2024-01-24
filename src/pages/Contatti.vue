@@ -1,5 +1,6 @@
 <script>
 import TomTom from '../components/TomTom.vue';
+//import axios from 'axios';
 export default {
   components: {
     TomTom,
@@ -14,45 +15,57 @@ export default {
       },
     };
   },
+
+  /*beforeRouteLeave (to, from, next) {
+    // distruggi l'istanza TomTom prima di lasciare la pagina
+    this.$refs.tomtom.destroy();
+    next();
+  },*/
+
   methods: {
     submitForm() {
-      // Qui  implemento la logica per inviare il messaggio al backend
-      // utilizzando Axios per fare una richiesta POST a un'API Laravel
-      // Dopo l'invio, mostra un messaggio di ringraziamento al cliente
-      alert('Grazie! Il tuo messaggio è stato inviato con successo.');
+      axios
+        .post('/send-email', this.formData)
+        .then((response) => {
+          // Dopo l'invio, mostra un messaggio di ringraziamento al cliente
+          alert('Grazie! Il tuo messaggio è stato inviato con successo.');
+        })
+        .catch((error) => {
+          alert('Errore nell\'invio del messaggio');
+          console.error(error);
+        });
     },
   },
 };
-
 </script>
 <template>
   <div class="container-fluid bg-page ">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6">
 
-        <!-- <TomTom></TomTom> -->
+        <TomTom></TomTom>
         <!-- Mappa -->
-        <!--  il tuo codice per la mappa  -->
+        <!--  il mio codice per la mappa  -->
       </div>
       <div class="col-12 col-md-12 col-lg-6">
 
         <div class="contact-us">
-          <h2 class="mt-1">{{ $t ('contactsTitle')}}</h2>
-          <p class="me-5">{{ $t ('contactsDescription')}}</p>
+          <h2 class="mt-1">{{ $t('contactsTitle') }}</h2>
+          <p class="me-5">{{ $t('contactsDescription') }}</p>
           <!-- phone,address,email -->
           <div class="row">
 
             <div class="col-12 col-md-4 mb-1">
               <div class="contact-column h-100">
                 <i class="fas fa-phone"></i>
-                <h5>{{ $t ('contact.phone')}}</h5>
+                <h5>{{ $t('contact.phone') }}</h5>
                 <p>0039 03321503155</p>
               </div>
             </div>
             <div class="col-12 col-md-4 mb-1">
               <div class="contact-column h-100">
                 <i class="fas fa-map-marker-alt "></i>
-                <h5>{{ $t ('contact.address') }}</h5>
+                <h5>{{ $t('contact.address') }}</h5>
                 <p>Via Cadorna, 26, 21010, <br> Montegrino Valtravaglia VA</p>
               </div>
             </div>
@@ -60,7 +73,7 @@ export default {
             <div class="col-12 col-md-4 mb-1">
               <div class="contact-column h-100">
                 <i class="fas fa-envelope"></i>
-                <h5>{{ $t ('contact.email') }}</h5>
+                <h5>{{ $t('contact.email') }}</h5>
                 <p>info@hotelmontegrino.it</p>
               </div>
             </div>
@@ -90,7 +103,7 @@ export default {
             </div>
           </div>
 
-          
+
         </div>
       </div>
     </div>
@@ -128,7 +141,7 @@ export default {
   padding-left: 2rem;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
-  
+
 
   i {
     font-size: 2rem;
@@ -136,7 +149,8 @@ export default {
     color: $primary-color;
   }
 }
-.contact-us{
+
+.contact-us {
   margin-left: 1.5rem;
 }
 </style>

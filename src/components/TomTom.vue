@@ -1,10 +1,5 @@
-<template>
-  <div class="map" ref="map"></div>
-</template>
 
 <script>
-
-
 import tt from '@tomtom-international/web-sdk-maps'
 
 export default {
@@ -13,9 +8,11 @@ export default {
       map: null,
       apiKey: '2QRkJUJyX9OT1og2NuGIOrXrLjjOKMQ9', // la mia chiave API TomTom
       location: {
-        lat: 45.972904,
-        lon: 8.768182
+        lat: 45.978461,
+        lon: 8.771951
       },
+      montegrinoLon: 8.771951,
+      montegrinoLat: 45.978461,
       
       zoom: 15
     };
@@ -38,14 +35,18 @@ export default {
       const montegrinoMarker = new tt.Marker({
         color: 'green'
       })
-        .setLngLat([montegrinoLon, montegrinoLat])
+        .setLngLat([this.montegrinoLon,this.montegrinoLat])
         .addTo(this.map);
 
-      // per personalizzare ulteriormente la mappa o aggiungere marker aggiuntivi secondo le tue esigenze.
+
     }
   }
 };
 </script>
+
+<template>
+  <div class="map" ref="map"></div>
+</template>
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
