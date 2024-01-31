@@ -1,8 +1,11 @@
 
 <script>
-import tt from '@tomtom-international/web-sdk-maps'
+import tt from '@tomtom-international/web-sdk-maps';
+//import { onMounted, ref } from 'vue' 
 
 export default {
+  //name:'Map',
+
   data() {
     return {
       map: null,
@@ -45,7 +48,7 @@ export default {
 </script>
 
 <template>
-  <div class="map" ref="map"></div>
+  <div class="map" ref="map" id="map"></div>
 </template>
 
 <style lang="scss" scoped>

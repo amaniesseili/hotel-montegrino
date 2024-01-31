@@ -6,8 +6,10 @@ import ChiSiamoPage from "./pages/ChiSiamo.vue";
 import GalleriaPage from "./pages/Galleria.vue";
 import RecensioniPage from "./pages/Recensioni.vue";
 import ServiziPage from "./pages/Servizi.vue";
-import ContattiPage from "./pages/Contatti.vue"
-import PrenotaPage from "./pages/Prenota.vue"
+import ContattiPage from "./pages/Contatti.vue";
+import PrenotaPage from "./pages/Prenota.vue";
+
+
 
 // definiamo le rotte
 const routes = [
@@ -40,6 +42,7 @@ const routes = [
     path: "/Contatti",
     name: "Contatti",
     component: ContattiPage,
+    //meta: { keepAlive: true },
   },
     {
     path: "/Prenota",
@@ -60,6 +63,9 @@ const router = createRouter({
   history: createWebHistory(),
   routes
 });
+
+
+
 
 // esportiamo l'istanta router per poterla usare dentro main.js
 export { router };

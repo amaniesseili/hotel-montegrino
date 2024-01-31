@@ -1,6 +1,7 @@
 <script>
 import TomTom from '../components/TomTom.vue';
-//import axios from 'axios';
+import axios from 'axios';
+
 export default {
   components: {
     TomTom,
@@ -8,30 +9,30 @@ export default {
 
   data() {
     return {
+      isTomTomActive: true,
+
       formData: {
         name: '',
         email: '',
         message: '',
       },
+      submitted: false,
+      errorMessage: null,
     };
   },
+  //--------showtomtom-------------------
 
-  /*beforeRouteLeave (to, from, next) {
-    // distruggi l'istanza TomTom prima di lasciare la pagina
-    this.$refs.tomtom.destroy();
-    next();
-  },*/
-
+  //-------------------------------------------
   methods: {
     submitForm() {
-      axios
-        .post('/send-email', this.formData)
-        .then((response) => {
-          // Dopo l'invio, mostra un messaggio di ringraziamento al cliente
-          alert('Grazie! Il tuo messaggio è stato inviato con successo.');
+      axios.post('/send-email', this.formData)
+        .then(response => {
+          this.submitted = true;
+          // Pulisci il form
+          this.formData = { name: '', email: '', message: '' };
         })
-        .catch((error) => {
-          alert('Errore nell\'invio del messaggio');
+        .catch(error => {
+          this.errorMessage = 'Errore nell\'invio del messaggio';
           console.error(error);
         });
     },
@@ -43,9 +44,14 @@ export default {
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6">
 
-        <TomTom></TomTom>
-        <!-- Mappa -->
-        <!--  il mio codice per la mappa  -->
+        <!-- <keep-alive>
+          <component :is="currentComponent" :key="currentComponentKey"></component>
+        </keep-alive> -->
+
+            <!-- Mappa -->
+            <TomTom v-if="isTomTomActive" />
+
+
       </div>
       <div class="col-12 col-md-12 col-lg-6">
 
@@ -84,7 +90,7 @@ export default {
           <div class="row">
             <div class="col">
 
-              <form class=" mt-4 me-5" @submit.prevent="submitForm">
+              <form class=" mt-4 me-5" v-if="!submitted" @submit.prevent="submitForm">
                 <div class="mb-3">
                   <label for="name" class="form-label">{{ $t('contact.form.name_label') }}</label>
                   <input v-model="formData.name" type="text" class="form-control" id="name" required>
@@ -98,12 +104,15 @@ export default {
                   <textarea v-model="formData.message" class="form-control" id="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn send-mess-btn">Invia Messaggio</button>
+                <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
               </form>
+              <div v-else>
+                <p>Grazie per averci contattato!</p>
 
+              </div>
             </div>
+
           </div>
-
-
         </div>
       </div>
     </div>
@@ -111,6 +120,11 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
 
 .bg-page {
   margin-top: -1rem;
