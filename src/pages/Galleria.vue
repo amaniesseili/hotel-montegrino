@@ -21,21 +21,21 @@ export default {
 
     <div class="row gallery-row d-flex justify-content-center mb-5">
 
-      <div id="carouselExampleIndicators" class="carousel slide col-8" >
+      <div id="carouselExampleIndicators" class="carousel slide col-4" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
+          <div class="carousel-item d-flex justify-content-center active">
+            <img src="/photo-slider-1.jpg" class="d-block  slider-img" alt="..." >
           </div>
           <div class="carousel-item">
-            <img src="/logo-montegrino.JPG?url" class="d-block w-100" alt="..." style="height: 30rem;" >
+            <img src="/photo-slider-2.jpg" class="d-block w-100 slider-img" alt="..." >
           </div>
           <div class="carousel-item">
-            <img src="/bg-homepage.jpg" class="d-block w-100" alt="..." style="height: 30rem;" >
+            <img src="/photo-slider-3.jpg" class="d-block w-100 slider-img" alt="..." >
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -61,6 +61,24 @@ export default {
 .page-content{
   padding-top: 10rem;
 }
+
+.slider-img{
+  height: 30rem;
+  //width: 100px;
+  //border: 2px solid black;
+}
+
+/*.carousel-control-next{
+  background-color: red;
+}
+.carousel-control-prev{
+  background-color: red;
+}*/
+/*.carousel-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 .bg-page {
   margin-top: -1rem;
   padding: 4rem;
