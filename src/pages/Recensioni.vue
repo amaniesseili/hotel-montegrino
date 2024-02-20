@@ -37,6 +37,7 @@ export default {
 };
 </script>
 <template>
+  <div class="page-content">
   <div class="container-fluid bg-page ">
     <div class="row">
       <div class="col-2"></div>
@@ -90,9 +91,15 @@ export default {
       </div>
     </div>
   </div>
+</div>
 </template>
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.page-content{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
 
 .bg-page {
   margin-top: -1rem;

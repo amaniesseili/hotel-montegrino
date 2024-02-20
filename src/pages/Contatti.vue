@@ -40,7 +40,8 @@ export default {
 };
 </script>
 <template>
-  <div class="container-fluid bg-page ">
+  <div class="page-content ">
+  <div class="container-fluid bg-page">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6">
 
@@ -117,9 +118,15 @@ export default {
       </div>
     </div>
   </div>
+</div>
 </template>
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.page-content{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
 
 .error-message {
   color: red;

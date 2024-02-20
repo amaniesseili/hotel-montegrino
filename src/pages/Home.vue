@@ -19,6 +19,7 @@ export default {
 }
 </script>
 <template>
+  <div class="page-content">
   <div class="container-fluid bg-homepage d-flex justify-content-center align-items-center flex-column" >
 
     <div class="welcome-box">
@@ -36,11 +37,16 @@ export default {
     </div>
 
 </div>
+</div>
 </template>
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
 /*stile homepage*/
+
+.page-content{
+  padding-top: 10rem;
+}
 
 .bg-homepage{
 	background: url('/bg-homepage.jpg');

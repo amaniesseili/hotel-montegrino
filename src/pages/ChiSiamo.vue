@@ -4,10 +4,10 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div class="page-content">
     <div class="container-fluid bg-page d-flex justify-content-center align-items-center flex-column">
       <h1>{{ $t('contactUsPageTitle') }}</h1>
-      <p class="text-center mb-5 mt-3">  {{ $t ('contactUsPageDescription') }} </p>
+      <p class="contactUs-Description">  {{ $t ('contactUsPageDescription') }} </p>
       <div class=" row d-flex">
 
         <div class="card col-lg-4 col-md-6">
@@ -44,19 +44,28 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
+.page-content{
+  padding-top: 10rem;
+}
 .bg-page {
   margin-top: -1rem;
   padding: 5rem;
   background-color: $medium-background-color;
   min-height: calc(100vh - 13rem);
 }
-
+ .contactUs-Description{
+  max-width: 60rem;
+  min-width: 10rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
 
 .card {
   position: relative;
   background-color: $medium-background-color;
   border: none;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .card-img{

@@ -37,7 +37,7 @@ export default {
 };
 </script>
 <template>
-  <div>
+  <div class="page-content">
     <div class="container-fluid bg-page" >
       <div class="row">
         <div class="col-2"></div>
@@ -61,12 +61,18 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
+.page-content{
+  padding-top: 9.5rem;
+  padding-bottom: 5rem;
+}
+
 .bg-page {
   margin-top: -1rem;
   padding-left: 4rem;
   padding-right: 4rem;
   background-color: $medium-background-color;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 10rem);
+  width: 100%;
 }
 
 .service-item {

@@ -7,9 +7,10 @@ export default {
 }
 </script>
 <template>
+  <div class="page-content"></div>
   <div class="container-fluid bg-page">
-    <div class="row">
-      <div class="col-2"></div>
+    <div class="row d-flex justify-content-center">
+      
       <div class="col-8">
         <h1 class="gallery-title text-center">{{ $t ('gallery.title')}}</h1>
         <p class="gallery-description text-center mb-3 mt-3"> {{ $t ('gallery.description')}}</p>
@@ -18,8 +19,8 @@ export default {
     </div>
 
 
-    <div class="row gallery-row">
-      <div class="col 2"></div>
+    <div class="row gallery-row d-flex justify-content-center mb-5">
+
       <div id="carouselExampleIndicators" class="carousel slide col-8" >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -46,7 +47,7 @@ export default {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-<div class="col-2"></div>
+
 
      
     </div> 
@@ -57,6 +58,9 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
+.page-content{
+  padding-top: 10rem;
+}
 .bg-page {
   margin-top: -1rem;
   padding: 4rem;
