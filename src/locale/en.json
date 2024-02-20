@@ -9,6 +9,11 @@
   "prenota": "Book",
   "lingua": "Language",
 
+  "italiano": "Italian",
+  "inglese": "English",
+  "francese": "French",
+  "tedesco": "Deutsch",
+
 
 
   "welcomeMessage": "WELCOME TO",

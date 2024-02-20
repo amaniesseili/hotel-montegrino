@@ -9,6 +9,11 @@
   "prenota": "Réserver",
   "lingua": "Langue",
 
+  "italiano": "Italien",
+  "inglese": "Anglais",
+  "francese": "Français",
+  "tedesco": "Allemand",
+
 
 
   "welcomeMessage": "BIENVENUE AU",

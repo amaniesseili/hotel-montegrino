@@ -9,6 +9,11 @@
   "prenota": "Buchen",
   "lingua": "Sprache",
 
+  "italiano": "Italienisch",
+  "inglese": "Englisch",
+  "francese": "Französisch",
+  "tedesco": "Deutsch",
+
 
   "welcomeMessage": "WILLKOMMEN IM",
   "hotelName": "Montegrino Hotel",
