@@ -49,23 +49,12 @@ const routes = [
     name: "Prenota",
     component: PrenotaPage,
   },
-  
- 
-	// ... altre rotte
-
 ]
-
-
-
 // creazione istanza di Router
 const router = createRouter({
   // Serve ad indicare come gestire l'url al cambio pagina
   history: createWebHistory(),
   routes
 });
-
-
-
-
 // esportiamo l'istanta router per poterla usare dentro main.js
 export { router };

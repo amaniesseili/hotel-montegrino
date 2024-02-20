@@ -4,7 +4,6 @@ import tt from '@tomtom-international/web-sdk-maps';
 //import { onMounted, ref } from 'vue' 
 
 export default {
-  //name:'Map',
 
   data() {
     return {
@@ -14,9 +13,6 @@ export default {
         lat: 45.978461,
         lon: 8.771951
       },
-      montegrinoLon: 8.771951,
-      montegrinoLat: 45.978461,
-      
       zoom: 15
     };
   },
@@ -25,23 +21,21 @@ export default {
   },
   methods: {
     initMap() {
-      tt.setProductInfo('Vue TomTom Maps', '1.0');
-      /*--------------*/
-      /*---------*/
-      this.map = tt.map({
+      tt.setProductInfo('Vue TomTom Maps', '1.0.0');
+  
+      let map = tt.map({
         key: this.apiKey,
         container: this.$refs.map,
-        center: [this.location.lon, this.location.lat],
-        zoom: 12
+        center: this.location,
+        zoom: 15
       });
+      let marker = new tt.Marker().setLngLat(this.location).addTo(map);
 
-      const montegrinoMarker = new tt.Marker({
-        color: 'green'
-      })
-        .setLngLat([this.montegrinoLon,this.montegrinoLat])
-        .addTo(this.map);
-
-
+      // const montegrinoMarker = new tt.Marker({
+      //   color: 'green'
+      // })
+      //   .setLngLat([this.location.lon, this.location.lat])
+      //   .addTo(this.map);
     }
   }
 };
@@ -53,7 +47,8 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
-.map{
+
+.map {
   border: 2px solid $primary-color;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -61,5 +56,4 @@ export default {
   margin-top: 2rem;
   height: 40rem;
 }
-
 </style>
