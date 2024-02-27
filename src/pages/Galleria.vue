@@ -21,21 +21,33 @@ export default {
 
     <div class="row gallery-row d-flex justify-content-center mb-5">
 
-      <div id="carouselExampleIndicators" class="carousel slide col-4" >
+      <div id="carouselExampleIndicators" class="carousel slide " >
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item d-flex justify-content-center active">
-            <img src="/photo-slider-1.jpg" class="d-block  slider-img" alt="..." >
+          <div class="carousel-item  active ">
+            <img src="/photo-slider-1.jpg" class="d-block  slider-img mx-auto" alt="..." >
+          </div>
+          <div class="carousel-item ">
+            <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="..." >
           </div>
           <div class="carousel-item">
-            <img src="/photo-slider-2.jpg" class="d-block w-100 slider-img" alt="..." >
+            <img src="/photo-slider-3.jpg" class="d-block  slider-img mx-auto" alt="..." >
           </div>
           <div class="carousel-item">
-            <img src="/photo-slider-3.jpg" class="d-block w-100 slider-img" alt="..." >
+            <img src="/photo-slider-4.jpg" class="d-block  slider-img mx-auto" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="/photo-slider-5.jpg" class="d-block  slider-img mx-auto" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="/photo-slider-6.jpg" class="d-block  slider-img mx-auto" alt="..." >
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -60,25 +72,26 @@ export default {
 
 .page-content{
   padding-top: 10rem;
+  //padding-bottom: 5rem;
 }
 
 .slider-img{
   height: 30rem;
-  //width: 100px;
+  width: 30rem;
   //border: 2px solid black;
 }
 
-/*.carousel-control-next{
-  background-color: red;
+.carousel-control-next-icon{
+  background-color: $primary-color;
+  padding: 1.3rem;
+  border-radius: 1.5rem;
 }
-.carousel-control-prev{
-  background-color: red;
-}*/
-/*.carousel-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
+.carousel-control-prev-icon{
+  background-color: $primary-color;
+  padding: 1.3rem;
+  border-radius: 1.5rem;
+}
+
 .bg-page {
   margin-top: -1rem;
   padding: 4rem;

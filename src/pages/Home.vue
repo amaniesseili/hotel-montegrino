@@ -24,6 +24,7 @@ export default {
 
     <div class="welcome-box">
       <div id="welcome">
+  
         <h4 class="welcome-message">{{ $t('welcomeMessage') }}</h4>
         <h1 class="montegrino-name">{{ $t('hotelName')}}</h1>
       </div>
