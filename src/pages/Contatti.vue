@@ -25,6 +25,10 @@ export default {
           console.log('Email inviata con successo:', response);
           this.submitted = true;
           this.showConfirmationMessage();
+          // svuoto i valori del modulo 
+          this.formData.name = '';
+          this.formData.email ='';
+          this.formData.message ='';
         })
         .catch(error => {
           console.error('Errore nell\'invio dell\'email:', error);
