@@ -116,7 +116,7 @@ export default {
               </form>
               
               <div class="confirmation-message" v-if="submitted">
-                <img src="/logo-montegrino.JPG" class="logo" alt="Hotel Logo" />
+                <img src="/logo-montegrino.JPG?url" class="logo" alt="Hotel Logo" />
                 <h4>{{ $t ('confirmationMessageTitle') }}</h4>
                 <p>{{ $t ('confirmationMessage') }}</p>
               </div>

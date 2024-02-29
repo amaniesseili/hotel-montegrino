@@ -1,5 +1,10 @@
 <script>
 export default {
+  build: {
+    rollupOptions: {
+      external: ['/logo-montegrino.JPG']
+    }
+  },
   data() {
     return {
       currentLanguage: 'it', // Lingua corrente, inizializzata con italiano
