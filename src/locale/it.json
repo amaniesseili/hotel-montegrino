@@ -139,6 +139,15 @@
       "message_label": "Messaggio *",
       "send_button": "Invia Messaggio"
     }
-  }
+    
+  },
+
+  
+
+  "inviaMessaggio" : "Invia messaggio",
+
+  "confirmationMessageTitle": "Grazie per averci contattato!",
+  "confirmationMessage": "Abbiamo ricevuto la tua richiesta di informazioni e ci impegniamo a fornirti una risposta nel minor tempo possibile."
+
 }
 

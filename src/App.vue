@@ -54,6 +54,13 @@ export default {
     <!-- --------------------- -->
     <div class="collapse navbar-collapse justify-content-center montegrino-scroll-nav" id="navbarNavDropdown">
       <ul class="navbar-nav ms-4">
+        
+<!-- prova mailjs -->
+<li class="nav-item me-5 ">
+  <router-link to="/mailjs" class="nav-link">mailjs</router-link>
+</li>
+<!-- -------------------------------- -->
+
         <li class="nav-item me-5 ">
           <router-link to="/" class="nav-link">{{ $t('home') }}</router-link>
         </li>

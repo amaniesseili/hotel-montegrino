@@ -9,6 +9,9 @@ import ServiziPage from "./pages/Servizi.vue";
 import ContattiPage from "./pages/Contatti.vue";
 import PrenotaPage from "./pages/Prenota.vue";
 
+//prova mailjs
+import MailJsPage from "./pages/MailJs.vue";
+
 
 
 // definiamo le rotte
@@ -49,6 +52,15 @@ const routes = [
     name: "Prenota",
     component: PrenotaPage,
   },
+
+  //----prova mailjs da cancellare
+  {
+    path: "/MailJs",
+    name: "MailJs",
+    component: MailJsPage,
+
+  },
+  //-----------------------------
 ]
 // creazione istanza di Router
 const router = createRouter({

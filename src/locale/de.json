@@ -83,7 +83,6 @@
 
 
 
-
   "servicesTitle": "Dienstleistungen",
   "servicesDescription": "Unsere einladende <strong>Rezeption</strong> steht Ihnen zwischen <strong>9:00 und 22:00 Uhr</strong> zur Verfügung und bietet einen engagierten und verfügbaren Service. Das <strong>Einchecken</strong> ist von <strong>14:00 bis 22:00 Uhr</strong> möglich und das <strong>Auschecken</strong> bis <strong>11:00 Uhr</strong>. Wir sind hier, um Ihre An- und Abreise so reibungslos wie möglich zu gestalten.",
   "services": {
@@ -132,6 +131,11 @@
       "message_label": "Nachricht *",
       "send_button": "Nachricht senden"
     }
-  }
+  },
+
+  "inviaMessaggio" : "Nachricht senden",
+
+  "confirmationMessageTitle": "Vielen Dank für Ihre Anfrage!",
+      "confirmationMessage": "Wir haben Ihre Anfrage erhalten und werden uns bemühen, Ihnen so schnell wie möglich eine Antwort zu geben."
 
 }

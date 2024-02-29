@@ -134,7 +134,12 @@
       "message_label": "Message *",
       "send_button": "Envoyer le Message"
     }
-  }
+  },
+
+  "inviaMessaggio" : "Envoyer le message",
+
+  "confirmationMessageTitle": "Nous vous remercions de nous avoir contactés!",
+  "confirmationMessage": "Votre demande d'informations a bien été reçue et nous nous engageons à vous fournir une réponse dans les plus brefs délais."
 
 }
 

@@ -1,16 +1,14 @@
 <script>
 import TomTom from '../components/TomTom.vue';
-import axios from 'axios';
+//import axios from 'axios';
 
 export default {
   components: {
     TomTom,
   },
-
   data() {
     return {
       isTomTomActive: true,
-
       formData: {
         name: '',
         email: '',
@@ -20,22 +18,29 @@ export default {
       errorMessage: null,
     };
   },
-  //--------showtomtom-------------------
-
-  //-------------------------------------------
   methods: {
     submitForm() {
-      axios.post('/send-email', this.formData)
+      emailjs.send('service_87ulvgc', 'template_6t3apvo', this.formData)
         .then(response => {
+          console.log('Email inviata con successo:', response);
           this.submitted = true;
-          // Pulisci il form
-          this.formData = { name: '', email: '', message: '' };
+          this.showConfirmationMessage();
         })
         .catch(error => {
-          this.errorMessage = 'Errore nell\'invio del messaggio';
-          console.error(error);
+          console.error('Errore nell\'invio dell\'email:', error);
+          this.errorMessage = "Si è verificato un errore durante l'invio dell'email. Si prega di riprovare più tardi.";
         });
     },
+    showConfirmationMessage() {
+      const confirmationMessage = document.createElement('div');
+      confirmationMessage.classList.add('confirmation-message');
+      /*confirmationMessage.innerHTML = `
+        <img src="/logo-montegrino.JPG" alt="Hotel Logo" />
+        <p>Grazie per averci contattato!</p>
+        <p>Riceverai una risposta entro 24 ore.</p>
+      `;*/
+      document.body.appendChild(confirmationMessage);
+    }
   },
 };
 </script>
@@ -44,11 +49,6 @@ export default {
   <div class="container-fluid bg-page">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6">
-
-        <!-- <keep-alive>
-          <component :is="currentComponent" :key="currentComponentKey"></component>
-        </keep-alive> -->
-
             <!-- Mappa -->
             <TomTom v-if="isTomTomActive" />
 
@@ -91,25 +91,30 @@ export default {
           <div class="row">
             <div class="col">
 
-              <form class=" mt-4 me-5" v-if="!submitted" @submit.prevent="submitForm">
+              <form class=" mt-4 me-5" @submit.prevent="submitForm">
                 <div class="mb-3">
                   <label for="name" class="form-label">{{ $t('contact.form.name_label') }}</label>
                   <input v-model="formData.name" type="text" class="form-control" id="name" required>
                 </div>
+
                 <div class="mb-3">
                   <label for="email" class="form-label">{{ $t('contact.form.email_label') }}</label>
                   <input v-model="formData.email" type="email" class="form-control" id="email" required>
                 </div>
+
                 <div class="mb-3">
                   <label for="message" class="form-label">{{ $t('contact.form.message_label') }}</label>
                   <textarea v-model="formData.message" class="form-control" id="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn send-mess-btn">Invia Messaggio</button>
+
+                <button type="submit" class="btn send-mess-btn">{{ $t ('inviaMessaggio')}}</button>
                 <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
               </form>
-              <div v-else>
-                <p>Grazie per averci contattato!</p>
-
+              
+              <div class="confirmation-message" v-if="submitted">
+                <img src="/logo-montegrino.JPG" class="logo" alt="Hotel Logo" />
+                <h4>{{ $t ('confirmationMessageTitle') }}</h4>
+                <p>{{ $t ('confirmationMessage') }}</p>
               </div>
             </div>
 
@@ -122,6 +127,23 @@ export default {
 </template>
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
+
+.confirmation-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: beige;
+  border: 2px solid green;
+  padding: 6rem;
+  text-align: center;
+  z-index: 1000; 
+}
+
+.logo {
+  width: 7rem;
+  margin-bottom: 2rem;
+}
 
 .page-content{
   padding-top: 10rem;

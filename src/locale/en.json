@@ -145,9 +145,13 @@
           "message_label": "Message *",
           "send_button": "Send Message"
         }
-      }
+      },
+      
 
+      "inviaMessaggio" : "Send message",
 
+      "confirmationMessageTitle": "Thank you for contacting us!",
+      "confirmationMessage": "Your inquiry has been received, and we will endeavor to provide you with a response as soon as possible."
 
 
 
