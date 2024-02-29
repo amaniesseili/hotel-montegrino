@@ -56,9 +56,9 @@ export default {
       <ul class="navbar-nav ms-4">
         
 <!-- prova mailjs -->
-<li class="nav-item me-5 ">
+<!-- <li class="nav-item me-5 ">
   <router-link to="/mailjs" class="nav-link">mailjs</router-link>
-</li>
+</li> -->
 <!-- -------------------------------- -->
 
         <li class="nav-item me-5 ">
