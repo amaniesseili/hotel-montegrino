@@ -142,7 +142,22 @@ export default {
 .slider-img {
   height: 30rem;
   width: auto;
-  //border: 2px solid black;
+  object-fit: cover;
+}
+@media (max-width:768px){
+  .slider-img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media(min-width:769px) and (max-width: 1500px){
+  .slider-img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .carousel-control-next-icon {
