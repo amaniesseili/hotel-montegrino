@@ -10,7 +10,9 @@ export default {
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="text-center">
             <h1 class="titlefont">{{ $t('contactUsPageTitle') }}</h1>
+            <p class="sloganfont">{{ $t ('slogaChiSiamo')}}</p>
             <p class="contactUs-Description">{{ $t('contactUsPageDescription') }}</p>
+            
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 ">
@@ -53,24 +55,27 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 .page-content {
-  padding-top: 10rem;
+  padding-top: 7rem;
   overflow-y: hiden;
 }
 
 .titlefont{
   font-size: 4rem;
 }
+.sloganfont{
+  font-size: 2rem;
+}
 
 .bg-page {
   margin-top: -1rem;
   padding: 5rem;
   background-color: $medium-background-color;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 10rem);
 }
 
 .contactUs-Description {
   max-height: 30rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-top: 2rem;
   padding: 4rem;
   border: 2px solid green;

@@ -97,7 +97,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .page-content{
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
 }
 
@@ -105,7 +105,7 @@ export default {
   margin-top: -1rem;
   padding: 2.5rem;
   background-color: $medium-background-color;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 10rem);
 }
 
 

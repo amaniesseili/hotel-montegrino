@@ -23,6 +23,7 @@
 
 
   "contactUsPageTitle": "Hotel Montegrino",
+  "slogaChiSiamo": "Eine Oase der Ruhe nur wenige Schritte vom See entfernt",
   "contactUsPageDescription": "Eingebettet in Montegrino Valtravaglia, nur 23 km vom Bahnhof Lugano entfernt, heißt das Hotel Montegrino seine Gäste mit einer entspannten Atmosphäre und einer Vielzahl von Annehmlichkeiten willkommen. Dieses charmante Drei-Sterne-Hotel, leidenschaftlich geführt von der Familie, bietet einen üppigen Garten, kostenlose private Parkplätze, eine gemütliche Gemeinschaftslounge und eine reizvolle Terrasse. Einige der Zimmer bieten einen Balkon mit atemberaubendem Blick auf den See, während alle Unterkünfte mit einem komfortablen Schreibtisch, kostenlosem WLAN und einem eigenen Bad mit Bidet und kostenlosen Pflegeprodukten ausgestattet sind. Einige Zimmer bieten herrliche Ausblicke auf die majestätischen umliegenden Berge. Jedes Zimmer ist zudem mit einem Fernseher und einem Haartrockner für einen noch angenehmeren Aufenthalt ausgestattet. Die Gäste des Hotel Montegrino können die malerischen umliegenden Gebiete von Montegrino Valtravaglia und darüber hinaus erkunden, vielleicht bei einer angenehmen Fahrradtour. Das Hotel liegt strategisch günstig nur 25 km von der Villa Panza und dem Messezentrum Lugano entfernt. Der nächstgelegene Flughafen ist der Mailand-Malpensa-Flughafen, nur 56 km vom Hotel Montegrino entfernt.",
 
   "receptionOverlay": {
@@ -116,7 +117,7 @@
 
 
   "contactsTitle": "Treten Sie mit uns in Kontakt",
-  "contactsDescription": "Für Unterstützung laden wir Sie ein, uns telefonisch zu kontaktieren, uns eine E-Mail zu senden oder unser Forum zu besuchen. Wir garantieren eine schnelle Antwort auf Ihre Anfrage.",
+  "contactsDescription": "Für Unterstützung laden wir Sie ein, uns telefonisch zu kontaktieren, uns eine E-Mail zu senden oder füllen Sie unser Formular aus. Wir garantieren eine schnelle Antwort auf Ihre Anfrage.",
   
   "contact": {
     "phone": "Telefon",

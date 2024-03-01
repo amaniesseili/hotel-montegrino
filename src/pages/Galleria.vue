@@ -57,18 +57,18 @@ export default {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
                 aria-label="Slide 17"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner mt-3">
               <div class="carousel-item  active ">
-                <img src="/photo-slider-14.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-8.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item ">
-                <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-17a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item">
                 <img src="/photo-slider-1.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item">
-                <img src="/photo-slider-4.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-18a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item">
                 <img src="/photo-slider-5.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
@@ -80,7 +80,7 @@ export default {
                 <img src="/photo-slider-7.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item">
-                <img src="/photo-slider-8.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-14.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
 
               <div class="carousel-item">
@@ -102,11 +102,13 @@ export default {
                 <img src="/photo-slider-16.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
               <div class="carousel-item">
-                <img src="/photo-slider-15a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
-              
               <div class="carousel-item">
-                <img src="/photo-slider-17a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+                <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
+              </div>
+              <div class="carousel-item">
+                <img src="/photo-slider-4.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -135,7 +137,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .page-content {
-  padding-top: 10rem;
+  padding-top: 7rem;
   //padding-bottom: 5rem;
 }
 
@@ -176,7 +178,7 @@ export default {
   margin-top: -1rem;
   padding: 3rem;
   background-color: $medium-background-color;
-  min-height: calc(100vh - 13rem);
+  min-height: calc(100vh - 10rem);
 }
 
 

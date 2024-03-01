@@ -62,7 +62,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 .page-content{
-  padding-top: 9.5rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
 }
 

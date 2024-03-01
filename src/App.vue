@@ -236,15 +236,16 @@ export default {
 }
 
 .logo {
-  width: 120px;
+  width: 6.5rem;
+  margin-top: -1rem;
 }
 
 .stars {
   color: $text-color-header-footer;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   margin-left: 2.2rem;
   margin-top: -1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: -0.3rem;
 }
 
 .toggler-icon {

@@ -46,7 +46,7 @@ export default {
 /*stile homepage*/
 
 .page-content{
-  padding-top: 10rem;
+  padding-top: 7rem;
 }
 
 .bg-homepage{
@@ -56,7 +56,7 @@ export default {
 	background-attachment: fixed; //fissa il bg-img per evitare lo scrolling
 	background-repeat: no-repeat;
   overflow-x: hidden;
-  height: calc(100vh - 13rem);
+  height: calc(100vh - 10rem);
   width: 100%;
   margin-top: -1rem;
 }
@@ -96,7 +96,7 @@ export default {
 
 #slogan {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
   font-weight: bold;
   animation: fadeAnimation 2s ease-in-out;
 }

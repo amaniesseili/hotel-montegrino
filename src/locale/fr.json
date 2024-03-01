@@ -24,6 +24,7 @@
 
 
   "contactUsPageTitle": "Hôtel Montegrino",
+  "slogaChiSiamo": "Une oasis de tranquillité à deux pas du lac",
   "contactUsPageDescription": "Niché à Montegrino Valtravaglia, à seulement 23 km de la gare de Lugano, l'Hôtel Montegrino accueille ses clients dans une atmosphère relaxante et propose une gamme de commodités. Cet charmant hôtel trois étoiles dispose d'un jardin luxuriant, d'un parking privé gratuit, d'un salon commun confortable et d'une terrasse charmante. Certaines chambres offrent un balcon avec une vue imprenable sur le lac, tandis que toutes les chambres sont équipées d'un bureau confortable, d'une connexion Wi-Fi gratuite et d'une salle de bains privative avec bidet et articles de toilette gratuits. Certaines chambres offrent une vue splendide sur les majestueuses montagnes environnantes. Chaque chambre est également équipée d'une télévision et d'un sèche-cheveux pour un séjour encore plus confortable. Les clients de l'Hôtel Montegrino peuvent explorer les zones pittoresques environnantes de Montegrino Valtravaglia et au-delà, en optant peut-être pour une agréable balade à vélo. L'hôtel est idéalement situé à seulement 25 km de Villa Panza et du Centre d'Exposition de Lugano. L'aéroport le plus proche est celui de Milan-Malpensa, à seulement 56 km de l'Hôtel Montegrino.",
 
   "receptionOverlay": {
@@ -119,7 +120,7 @@
 
 
   "contactsTitle": "Entrez en Contact avec Nous",
-  "contactsDescription": "Pour obtenir de l'aide, nous vous invitons à nous contacter par téléphone, à nous envoyer un e-mail ou à visiter notre forum. Nous garantissons une réponse rapide à votre demande.",
+  "contactsDescription": "Pour obtenir de l'aide, nous vous invitons à nous contacter par téléphone, à nous envoyer un e-mail ou en remplissant notre formulaire. Nous garantissons une réponse rapide à votre demande.",
   
   "contact": {
     "phone": "Téléphone",
