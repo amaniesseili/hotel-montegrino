@@ -28,10 +28,18 @@ export default {
     changeLocale(locale) {
       this.$i18n.locale = locale;
       this.currentLanguage = locale;
-      // Aggiorna l'estensione del flag se necessario
+      // Aggiorno l'estensione del flag se necessario
       this.flagExtension = locale === 'it' ? 'svg' : 'png';
     },
+    //aggiungere un metodo closeMenu per chiudere il menu toggler dopo aver cliccato su una voce di menu e net template aggiungo l'evento @click="closeMenu"
+    closeMenu(){
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarToggler.classList.contains('collapsed')) {
+      return; // Il menu è già chiuso
+    }
+    navbarToggler.click(); // Simulare il clic sul toggler per chiudere il menu
   },
+}
 };
 </script>
 
@@ -67,16 +75,16 @@ export default {
 <!-- -------------------------------- -->
 
         <li class="nav-item me-5 ">
-          <router-link to="/" class="nav-link">{{ $t('home') }}</router-link>
+          <router-link to="/" class="nav-link" @click="closeMenu" >{{ $t('home') }}</router-link>
         </li>
         <li class="nav-item me-5 ">
-          <router-link to="/chisiamo" class="nav-link">{{ $t('chiSiamo') }}</router-link>
+          <router-link to="/chisiamo" class="nav-link" @click="closeMenu" >{{ $t('chiSiamo') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/galleria" class="nav-link">{{ $t('galleria') }}</router-link>
+          <router-link to="/galleria" class="nav-link" @click="closeMenu" >{{ $t('galleria') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/recensioni" class="nav-link">{{ $t('recensioni') }}</router-link>
+          <router-link to="/recensioni" class="nav-link" @click="closeMenu" >{{ $t('recensioni') }}</router-link>
         </li>
       </ul>
 
@@ -93,10 +101,10 @@ export default {
 
       <ul class="navbar-nav ms-4 ">
         <li class="nav-item me-5">
-          <router-link to="/servizi" class="nav-link">{{ $t('servizi') }}</router-link>
+          <router-link to="/servizi" class="nav-link" @click="closeMenu" >{{ $t('servizi') }}</router-link>
         </li>
         <li class="nav-item me-5">
-          <router-link to="/contatti" class="nav-link">{{ $t('contatti') }}</router-link>
+          <router-link to="/contatti" class="nav-link" @click="closeMenu" >{{ $t('contatti') }}</router-link>
         </li>
         <li class="nav-item me-5">
           <a href="https://reservations.verticalbooking.com/premium/index.html?id_albergo=26654&dc=4294&id_stile=20200&lingua_int=ita"
