@@ -72,10 +72,15 @@ export default {
   background-color: $medium-background-color;
   min-height: calc(100vh - 10rem);
   width: 100%;
+
+
+  @media (max-width: 768px){
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+  }
 }
-.service-description{
- // min-width: 17rem;
-}
+
 
 .service-item {
   display: flex;

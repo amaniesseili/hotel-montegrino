@@ -82,6 +82,9 @@ export default {
   //margin-right: 2rem ;
   overflow-x: auto;
 
+  @media(max-width:768px){
+    padding: 1rem;
+  }
 
 
 }

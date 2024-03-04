@@ -248,7 +248,7 @@ export default {
   font-size: 0.5rem;
   margin-left: 2.2rem;
   margin-top: -1.3rem;
-  margin-bottom: -0.3rem;
+  margin-bottom: -0.1rem;
 }
 
 .toggler-icon {
@@ -265,6 +265,10 @@ export default {
   color: $text-color-header-footer;
   padding-left: 5rem;
   padding-right: 5rem;
+
+  @media (max-width:768px){
+    padding: 0.5rem;
+  }
 }
 
 .footer-content {
@@ -298,7 +302,7 @@ export default {
 .copyright-section p {
   margin: 0;
   font-size: 0.8rem;
-  min-width: 17rem;
+  min-width: 15rem;
 }
 .powered-by{
   margin-bottom: 0.4rem;

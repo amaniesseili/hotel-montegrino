@@ -39,18 +39,17 @@ export default {
 <template>
   <div class="page-content">
   <div class="container-fluid bg-page ">
-    <div class="row text-center">
-      <div class="col-2"></div>
+    <div class="row text-center d-flex justify-content-center">
+      
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
         <h1 class="reviews-title">{{ $t ('reviewsTitle')}}</h1>
-        <div class="d-flex justify-content-center align-items-center">
-          <h3 class="me-2"> 4.7 </h3>
-          <div class="google-rating ">
+        <div class="d-flex justify-content-center align-items-center ms-3">
+          <h4>4.7</h4>
+          <div class="google-rating">
             <div class="rating-percentage"></div>
           </div>
-          <small class="ms-2"> {{ $t ('rating.googleLink')}} 
-            <img src="/google-logo-png2.png"  style="width: 17px;" alt="google-logo">
-              Google</small>
+          <small>{{ $t ('rating.googleLink')}}
+            <img src="/google-logo-png2.png"  style="width: 15px;" alt="google-logo">Google</small>
         </div>
         <p class="mt-1 text-center reviews-description ">{{ $t ('reviewsDescription')}}</p>
 
@@ -120,7 +119,7 @@ small{
   height: 8px;
   border-radius: 5px;
 }
-h3{
+h4{
   color:gray ;
 }
 .rating-percentage {
