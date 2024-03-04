@@ -39,11 +39,10 @@ export default {
 <template>
   <div class="page-content">
     <div class="container-fluid bg-page" >
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-9 col-md-12 col-sm-12 d-flex justify-content-center flex-column ">
           <h1 class="text-center mt-4">{{ $t('servicesTitle') }}</h1>
-          <p class="text-center" v-html="$t('servicesDescription')"></p>
+          <p class="text-center service-description" v-html="$t('servicesDescription')"></p>
         </div>
       </div>
       <div class="row">
@@ -63,16 +62,19 @@ export default {
 
 .page-content{
   padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .bg-page {
   margin-top: -1rem;
-  padding-left: 4rem;
+ padding-left: 4rem;
   padding-right: 4rem;
   background-color: $medium-background-color;
   min-height: calc(100vh - 10rem);
   width: 100%;
+}
+.service-description{
+ // min-width: 17rem;
 }
 
 .service-item {

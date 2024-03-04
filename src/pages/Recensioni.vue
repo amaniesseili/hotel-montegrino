@@ -39,11 +39,11 @@ export default {
 <template>
   <div class="page-content">
   <div class="container-fluid bg-page ">
-    <div class="row">
+    <div class="row text-center">
       <div class="col-2"></div>
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
         <h1 class="reviews-title">{{ $t ('reviewsTitle')}}</h1>
-        <div class="d-flex align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
           <h3 class="me-2"> 4.7 </h3>
           <div class="google-rating ">
             <div class="rating-percentage"></div>
@@ -52,7 +52,7 @@ export default {
             <img src="/google-logo-png2.png"  style="width: 17px;" alt="google-logo">
               Google</small>
         </div>
-        <p class="mt-1 text-center">{{ $t ('reviewsDescription')}}</p>
+        <p class="mt-1 text-center reviews-description ">{{ $t ('reviewsDescription')}}</p>
 
       </div>
     </div>
@@ -85,7 +85,7 @@ export default {
 
     <div class="row">
       <div class="col-4"></div>
-      <div class="col-4">
+      <div class="col-4 d-flex justify-content-center ">
         <a href="https://www.google.it/travel/hotels/hotel%20montegrino/entity/CgoIr9D4u_fEvdFREAE/reviews?q=hotel%20montegrino&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4284970%2C4754388%2C4757164%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C4990494%2C72277293%2C72298667%2C72302247%2C72317059%2C72385362%2C72406588%2C72408738%2C72412680%2C72414906%2C72414907%2C72421565%2C72430562%2C72436632%2C72439728%2C72440517&hl=it-IT&gl=it&ssta=1&ts=CAEaSQorEicyJTB4NDc4NWQxM2JkNzQyYWM3MzoweDUxYTJmNjI3Nzc3ZTI4MmYaABIaEhQKBwjnDxAMGAISBwjnDxAMGAMYATICEAAqCQoFOgNFVVIaAA&rp=EK_Q-Lv3xL3RURCv0Pi798S90VE4AkAASAHAAQKaAgIIAA&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAjrebluyCAxUAAAAAHQAAAAAQCQ"
           class="btn btn-primary read-more-btn text-center" target="_blank">{{ $t ('readMoreBtn')}}</a>
       </div>
@@ -98,7 +98,7 @@ export default {
 
 .page-content{
   padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .bg-page {
@@ -146,6 +146,10 @@ h3{
 
 .reviews-title {
   margin-top: -1rem;
+  min-width: 17rem;
+}
+.reviews-description{
+  min-width: 23rem;
 }
 
 .card-img-circle {
@@ -204,6 +208,7 @@ h3{
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  min-width: 15rem;
 }
 
 .read-more-btn:hover {
