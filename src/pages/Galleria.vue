@@ -3,164 +3,116 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 export default {
+  data() {
+    return {
+      images: [
+        { src: "/photo-slider-8.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-17a.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-1.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-2.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-3.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-4.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-5.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-7.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-8.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-10.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-11a.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-12a.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-13.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-14.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-15a.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-16.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-18a.jpg", alt: "hotel montegrino" },
+        
 
-}
+        
+      ],
+      showCarousel: false,
+      activeIndex: 0
+    };
+  },
+  methods: {
+    openCarousel(index) {
+      this.activeIndex = index;
+      this.showCarousel = true;
+    },
+    closeCarousel() {
+      this.showCarousel = false;
+    }
+  }
+};
 </script>
 <template>
-  <div class="page-content"></div>
-  <div class="container-fluid bg-page">
-    <div class="row d-flex justify-content-center">
-
-      <div class="col-7">
-        <h1 class="gallery-title text-center">{{ $t('gallery.title') }}</h1>
-        <p class="gallery-description text-center mb-3 mt-3"> {{ $t('gallery.description') }}</p>
-
+  <div class="page-content">
+    <div class="container-fluid bg-page">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="gallery-title text-center">{{ $t('gallery.title') }}</h1>
+          <p class="gallery-description text-center mb-2 mt-3">{{ $t('gallery.description') }}</p>
+        </div>
       </div>
-      <div class="col-7">
-
-        <div class="row gallery-row d-flex justify-content-center mb-5">
-
-          <div id="carouselExampleIndicators" class="carousel slide ">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-                aria-label="Slide 9"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-                aria-label="Slide 10"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10"
-                aria-label="Slide 11"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11"
-                aria-label="Slide 12"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12"
-                aria-label="Slide 13"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13"
-                aria-label="Slide 14"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14"
-                aria-label="Slide 15"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15"
-                aria-label="Slide 16"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16"
-                aria-label="Slide 17"></button>
-            </div>
-            <div class="carousel-inner mt-3">
-              <div class="carousel-item  active ">
-                <img src="/photo-slider-8.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item ">
-                <img src="/photo-slider-17a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-1.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-18a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-5.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-6.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-7.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-14.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-
-              <div class="carousel-item">
-                <img src="/photo-slider-10.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-11a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-12a.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-13.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-1.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-16.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-2.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-              <div class="carousel-item">
-                <img src="/photo-slider-4.jpg" class="d-block  slider-img mx-auto" alt="hotel montegrino">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  
+      <div class="row gallery-row d-flex justify-content-center mb-5">
+        <div v-for="(image, index) in images" :key="index" class="col-lg-3 col-md-6 mb-4 ">
+          <div class="card">
+            <img :src="image.src" class="card-img-top gallery-img" :alt="image.alt" @click="openCarousel(index)">
           </div>
         </div>
-
       </div>
-
+  
+      <!-- Carousel per visualizzare le immagini -->
+      <div v-if="showCarousel" class="modal" tabindex="-1" role="dialog" style="display: block;">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body position-relative">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner my-carousel">
+                  <div v-for="(image, index) in images" :key="index" :class="{ 'carousel-item': true, 'active': index === activeIndex }">
+                    <img :src="image.src" class="d-block w-100" :alt="image.alt">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <button type="button" class="btn-close position-absolute top-0 end-0 close-carousel" aria-label="Close" @click="closeCarousel"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-
   </div>
-</template>
+  </template>
+
+
+
 <style lang="scss" scoped>
 @use "../style/partials/variables" as *;
 
 .page-content {
   padding-top: 7rem;
+  
   //padding-bottom: 5rem;
 }
 
-.slider-img {
-  height: 30rem;
-  width: auto;
-  object-fit: cover;
+.close-carousel{
+  margin: -1rem;
+  //padding: 0.5rem;
+  font-size: smaller;
+
 }
-@media (max-width:768px){
-  .slider-img{
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-  }
+.gallery-img{
+  height: 20rem;
+  //width: 20rem;
+  object-fit: cover;
+
 }
 
-@media(min-width:769px) and (max-width: 1500px){
-  .slider-img{
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-  }
-}
 
 .carousel-control-next-icon {
   background-color: $primary-color;
