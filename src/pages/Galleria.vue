@@ -54,8 +54,8 @@ export default {
   
       <div class="row gallery-row d-flex justify-content-center mb-5">
         <div v-for="(image, index) in images" :key="index" class="col-lg-3 col-md-6 mb-4 ">
-          <div class="card">
-            <img :src="image.src" class="card-img-top gallery-img" :alt="image.alt" @click="openCarousel(index)">
+          <div class="card rounded-0">
+            <img :src="image.src" class="card-img-top gallery-img rounded-0" :alt="image.alt" @click="openCarousel(index)">
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@ export default {
       <!-- Carousel per visualizzare le immagini -->
       <div v-if="showCarousel" class="modal" tabindex="-1" role="dialog" style="display: block;">
         <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-body position-relative">
+          <div class="modal-content my-modal-content">
+            <div class="modal-body position-relative my-carousel">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner my-carousel">
+                <div class="carousel-inner">
                   <div v-for="(image, index) in images" :key="index" :class="{ 'carousel-item': true, 'active': index === activeIndex }">
                     <img :src="image.src" class="d-block w-100" :alt="image.alt">
                   </div>
@@ -112,7 +112,15 @@ export default {
   object-fit: cover;
 
 }
-
+.my-carousel{
+  background-color: beige;
+  border: 0.3rem solid green;
+  padding: 1.5rem;
+ // margin-top: 4rem;
+}
+.my-modal-content{
+  margin-top: 7rem;
+}
 
 .carousel-control-next-icon {
   background-color: $primary-color;
