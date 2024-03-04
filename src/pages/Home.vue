@@ -70,15 +70,15 @@ export default {
   justify-content: center;
   text-align: center;
   //background-color: $primary-color-transparent;
-  border-radius: 1rem;
-  padding: 3rem;
+  //border-radius: 1rem;
+  //padding: 3rem;
   color: $text-color-header-footer;
 }
 
 .montegrino-name{
   font-size: 4.5rem;
   font-weight: bolder;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   animation: fadeAnimation 1s ease-in-out;
 }
 @keyframes fadeAnimation {
@@ -86,8 +86,8 @@ export default {
   100% { opacity: 1; }
 }
 .welcome-message{
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+  font-size: 1.6rem;
+  margin-bottom: 1.3rem;
   font-weight: bold;
   animation: fadeAnimation 1s ease-in-out;
 
@@ -95,8 +95,8 @@ export default {
 
 
 #slogan {
-  font-size: 1.5rem;
-  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
   font-weight: bold;
   animation: fadeAnimation 2s ease-in-out;
 }
@@ -110,6 +110,7 @@ export default {
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 #book-now-btn:hover {

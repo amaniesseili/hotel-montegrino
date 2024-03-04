@@ -52,7 +52,7 @@ export default {
 
     <!---------- logo -->
     <router-link to="/" class="navbar-brand d-lg-none d-md-block d-sm-block">
-      <img class="logo me-1" src="/logo-montegrino.JPG?url" alt="">
+      <img class="logo me-1 logo-mobile" src="/logo-montegrino.JPG?url" alt="">
       <div class="stars">
         <i class="fa-solid fa-star me-1"></i>
         <i class="fa-solid fa-star me-1"></i>
@@ -179,7 +179,7 @@ export default {
       </div>
       <div class="copyright-section">
         <p class="text-center">&copy; 2023 Hotel Montegrino. All rights reserved.</p>
-        <div class="text-center">
+        <div class="text-center powered-by">
           <small> Powered by Amani Esseili</small>
         </div>
       </div>
@@ -239,6 +239,9 @@ export default {
   width: 6.5rem;
   margin-top: -1rem;
 }
+.logo-mobile{
+  margin-top: -1rem;
+}
 
 .stars {
   color: $text-color-header-footer;
@@ -257,7 +260,7 @@ export default {
   position: fixed;
   bottom: 0;
   width: 100%;
-  min-height: 5rem;
+  min-height: 4rem;
   background-color: $primary-color;
   color: $text-color-header-footer;
   padding-left: 5rem;
@@ -275,12 +278,12 @@ export default {
 }
 
 .social-media-icons i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: $text-color-header-footer;
   margin-left: 2rem;
   border: 1px solid transparent;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
   transition: all 0.3s ease;
 }
 
@@ -288,11 +291,17 @@ export default {
   border-color: $medium-background-color ;
   background-color: $light-background-color ;
   color: $primary-color;
-  transform: scale(1.3);
+  transform: scale(1.1);
 
 }
 
 .copyright-section p {
   margin: 0;
+  font-size: 0.8rem;
+  min-width: 17rem;
+}
+.powered-by{
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
 }
 </style>

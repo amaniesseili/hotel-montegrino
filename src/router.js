@@ -18,37 +18,37 @@ import MailJsPage from "./pages/MailJs.vue";
 const routes = [
   {
     path: "/", // uri da scrivere nel browser
-    name: "home", // nome della rotta da usare per creare un link
+    name: "Home", // nome della rotta da usare per creare un link
     component: HomePage // componente che ritorna l'html della pagina
   },
   {
-    path: "/ChiSiamo",
+    path: "/chisiamo",
     name: "ChiSiamo",
     component: ChiSiamoPage,
   },
   {
-    path: "/Galleria",
+    path: "/galleria",
     name: "Galleria",
     component: GalleriaPage,
   },
   {
-    path: "/Recensioni",
+    path: "/recensioni",
     name: "Recensioni",
     component: RecensioniPage,
   },
   {
-    path: "/Servizi",
+    path: "/servizi",
     name: "Servizi",
     component: ServiziPage,
   },
   {
-    path: "/Contatti",
+    path: "/contatti",
     name: "Contatti",
     component: ContattiPage,
     //meta: { keepAlive: true },
   },
     {
-    path: "/Prenota",
+    path: "/prenota",
     name: "Prenota",
     component: PrenotaPage,
   },

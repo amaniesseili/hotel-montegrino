@@ -98,6 +98,7 @@ export default {
   height: 100%;
 }
 
+
 .card-img-overlay-info {
   position: absolute;
   top: 50%;
