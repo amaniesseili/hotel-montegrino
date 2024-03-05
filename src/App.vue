@@ -9,6 +9,10 @@ export default {
     return {
       currentLanguage: 'it', // Lingua corrente, inizializzata con italiano
       flagExtension: 'svg', // Estensione predefinita del flag
+
+      privacyPolicyModalVisible: false,
+      hotelName: "Hotel Montegrino",
+      hotelDescription: "Inserisci qui la descrizione della tua politica sulla privacy."
     };
   },
   computed: {
@@ -39,6 +43,12 @@ export default {
     }
     navbarToggler.click(); // Simulare il clic sul toggler per chiudere il menu
   },
+  openPrivacyPolicyModal() {
+      this.privacyPolicyModalVisible = true;
+    },
+    closePrivacyPolicyModal() {
+      this.privacyPolicyModalVisible = false;
+    }
 }
 };
 </script>
@@ -178,7 +188,10 @@ export default {
         </router-link>
       </div>
       <div class="copyright-section">
-        <p class="text-center">&copy; 2023 Hotel Montegrino. All rights reserved.</p>
+        <p class="text-center">&copy; 2023 Hotel Montegrino. All rights reserved
+          <!-- privacy policy  -->
+          <a class="policy-link" href="#" @click="openPrivacyPolicyModal"> | Privacy Policy</a>
+        </p>
         <div class="text-center powered-by">
           <small> Powered by Amani Esseili</small>
         </div>
@@ -190,6 +203,27 @@ export default {
         <a href="url-to-facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
       </div>
     </div>
+
+       <!-- Privacy Policy Modal -->
+       <div class="modal" :class="{ 'show': privacyPolicyModalVisible }" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header"> 
+               <h1 class="modal-title ">Privacy Policy</h1>
+              <button type="button" class="btn-close" @click="closePrivacyPolicyModal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <h6>{{ $t ('privacyPolicyTitle') }}</h6>
+            <p>{{ $t ('infoSullaPrivacy') }} </p>
+            <h6>{{ $t ('DatiNavigazione') }}</h6>
+            <p>{{ $t ('pDatiNavigazione') }} </p>
+            <h6>{{ $t ('datiFornitiVolontariamenteUtente') }}</h6>
+            <p>{{ $t ('pDatiFornitiVolontariamenteUtente') }} </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
   </footer>
 </template>
 
@@ -307,5 +341,94 @@ export default {
 .powered-by{
   margin-bottom: 0.4rem;
   font-size: 0.8rem;
+}
+
+/* Stili del modal*/
+
+.policy-link{
+  text-decoration: none;
+  color:  white;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 6rem;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+
+
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-header {
+  padding: 1rem;
+  background-color:$primary-color;
+  //color: white;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+.modal-body {
+  position: relative;
+  padding: 1rem;
+  color: black;
+  overflow-y: auto;
+  max-height: 40rem;
+  font-size: 0.6rem;
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  background-color: #f7f7f7;
+}
+
+.btn-close {
+  padding: 0.5rem 0.75rem;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.5;
+
+}
+
+.btn-close:hover {
+  opacity: 0.75;
 }
 </style>
