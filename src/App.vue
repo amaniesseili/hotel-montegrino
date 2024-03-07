@@ -1,5 +1,8 @@
 <script>
 export default {
+
+  name: 'App',
+
   build: {
     rollupOptions: {
       external: ['/logo-montegrino.JPG']
@@ -35,6 +38,7 @@ export default {
       // Aggiorno l'estensione del flag se necessario
       this.flagExtension = locale === 'it' ? 'svg' : 'png';
     },
+    
     //aggiungere un metodo closeMenu per chiudere il menu toggler dopo aver cliccato su una voce di menu e net template aggiungo l'evento @click="closeMenu"
     closeMenu(){
       const navbarToggler = document.querySelector('.navbar-toggler');
@@ -43,6 +47,8 @@ export default {
     }
     navbarToggler.click(); // Simulare il clic sul toggler per chiudere il menu
   },
+
+  //open and close privacy policy modal
   openPrivacyPolicyModal() {
       this.privacyPolicyModalVisible = true;
     },
@@ -55,7 +61,7 @@ export default {
 
 <template>
   <!--------- header --------->
-
+<div id="app">
   <nav class=" navbar montegrino-nav navbar-expand-lg fixed-top ">
     <!-- se metto al posto della classe montergrino-nav (bg-body-tertiary) funziona tutto-->
 
@@ -188,12 +194,12 @@ export default {
         </router-link>
       </div>
       <div class="copyright-section">
-        <p class="text-center">&copy; 2023 Hotel Montegrino. All rights reserved
+        <p class="text-center">&copy; 2023 Hotel Montegrino. {{$t ('allRightsReserved')}}
           <!-- privacy policy  -->
           <a class="policy-link" href="#" @click="openPrivacyPolicyModal"> | Privacy Policy</a>
         </p>
         <div class="text-center powered-by">
-          <small> Powered by Amani Esseili</small>
+          <small> {{ $t ('poweredBy') }} Amani Esseili</small>
         </div>
       </div>
       <div class="social-media-icons">
@@ -225,11 +231,16 @@ export default {
         </div>
       </div>
   </footer>
+</div>
 </template>
 
 <style lang="scss">
 @use "./style/partials/variables" as *;
 
+
+html body{
+  background-color: $primary-color;
+}
 /* Stili specifici della Navbar */
 
 .montegrino-nav {
