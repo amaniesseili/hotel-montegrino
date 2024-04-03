@@ -13,7 +13,7 @@ export default {
         { icon: 'fa-solid fa-wifi', text: 'Wi-Fi gratuito' },
         { icon: 'fa-solid fa-broom', text: 'Pulizia giornaliera' },
         { icon: 'fa-solid fa-baby-carriage', text: 'Culle su richiesta' },
-        { icon: 'fa-solid fa-bag-shopping', text: 'Negozio souvenir' },
+        { icon: 'fa-solid fa-charging-station', text: 'Stazione di ricarica elettrica' },
         { icon: 'fa-solid fa-people-roof', text: 'Camere familiari disponibili' },
         { icon: 'fa-solid fa-sun', text: 'Terrazza Solarium' },
         { icon: 'fa-solid fa-utensils', text: 'Bollitore e microonde disponibili' },

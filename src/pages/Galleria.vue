@@ -8,6 +8,7 @@ export default {
       images: [
         { src: "/photo-slider-8.jpg", alt: "hotel montegrino" },
         { src: "/photo-slider-17a.jpg", alt: "hotel montegrino" },
+        { src: "/photo-slider-34.jpg", alt: "hotel montegrino"},
         { src: "/photo-slider-1.jpg", alt: "hotel montegrino" },
         { src: "/photo-slider-2.jpg", alt: "hotel montegrino" },
         { src: "/photo-slider-3.jpg", alt: "hotel montegrino" },

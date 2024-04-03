@@ -44,7 +44,7 @@ export default {
       <div class="col-8 d-flex justify-content-center align-items-center flex-column">
         <h1 class="reviews-title">{{ $t ('reviewsTitle')}}</h1>
         <div class="d-flex justify-content-center align-items-center ms-3">
-          <h4>4.7</h4>
+          <h4>4.8</h4>
           <div class="google-rating">
             <div class="rating-percentage"></div>
           </div>
